@@ -1,0 +1,10 @@
+include ':app'
+include ':domain'
+include ':imagepreview'
+include ':navigation'
+include ':resources:colors'
+include ':resources:drawables'
+include ':resources:strings'
+include ':summary'
+include ':ui'
+rootProject.name = "QuickStart"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="DefaultStylesTheme">
+    <attr name="deploymentViewStyle" format="reference" />
+    <attr name="secondaryObjectiveViewStyle" format="reference" />
+    <attr name="button" format="reference" />
+  </declare-styleable>
+
+  <declare-styleable name="DeploymentView">
+    <attr name="deploymentview_verbose" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="SecondaryObjectiveView">
+    <attr name="secondaryobjectiveview_verbose" format="boolean"/>
+  </declare-styleable>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/textView"
+  tools:layout_height="wrap_content"
+  tools:layout_width="match_parent"
+  tools:orientation="vertical"
+  tools:parentTag="android.widget.LinearLayout">
+
+  <TextView
+    android:id="@+id/terrainLayoutTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/Typography.Component.Title"
+    tools:text="Map title" />
+
+  <ImageView
+    android:id="@+id/terrainLayoutImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@string/terrainlayout_preview"
+    android:scaleType="fitCenter"
+    tools:src="@drawable/terrainlayout_a1_shroudedpool" />
+
+</merge>

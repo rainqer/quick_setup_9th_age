@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <LinearLayout
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:padding="@dimen/screen_padding">
+
+      <Button
+        android:id="@+id/generateNewConfigurationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_medium"
+        android:text="@string/generateNewConfiguration"
+        style="@style/Typography.Component.Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:padding="@dimen/screen_padding">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terrainlayout"
+        android:textAppearance="@style/Typography.Component.Subtitle" />
+
+      <org.auspiciousrhino.ui.TerrainLayoutView
+        android:id="@+id/terrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+      <Button
+        android:id="@+id/enlargeTerrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_medium"
+        android:text="@string/enlarge"
+        style="@style/Typography.Component.Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:padding="@dimen/screen_padding">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deployment"
+        android:textAppearance="@style/Typography.Component.Subtitle" />
+
+      <org.auspiciousrhino.ui.DeploymentView
+        android:id="@+id/deployment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:deploymentview_verbose="false" />
+
+      <Button
+        android:id="@+id/deploymentDetailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_medium"
+        android:text="@string/details"
+        style="@style/Typography.Component.Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:padding="@dimen/screen_padding">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/secondaryobjective"
+        android:textAppearance="@style/Typography.Component.Subtitle" />
+
+      <org.auspiciousrhino.ui.SecondaryObjectiveView
+        android:id="@+id/secondaryObjective"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:secondaryobjectiveview_verbose="false" />
+
+      <Button
+        android:id="@+id/secondaryObjectiveDetailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_medium"
+        android:text="@string/details"
+        style="@style/Typography.Component.Button"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

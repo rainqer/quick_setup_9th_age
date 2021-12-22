@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="org.auspiciousrhino.imagepreview">
+
+  <application>
+
+    <activity
+      android:name="org.auspiciousrhino.imagepreview.ImagePreviewActivity"
+      android:exported="true" />
+
+  </application>
+
+</manifest>
