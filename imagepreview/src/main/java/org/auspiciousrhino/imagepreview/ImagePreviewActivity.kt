@@ -16,6 +16,9 @@ class ImagePreviewActivity : ComponentActivity() {
     binding = ActivityImagepreviewBinding.inflate(layoutInflater)
     setContentView(binding.root)
     binding.imagePreview.setImageResource(intent.getIntExtra(IMAGE_RES_KEY, 0))
+    binding.imagePreview.post {
+      binding.imagePreview.setRotationBy(90f)
+    }
   }
 
   companion object {
