@@ -2,11 +2,11 @@ object Versions {
 
   const val kotlin = "1.6.0"
   const val compileSdkVersion = 31
-  const val minSdkVersion = 26
+  const val minSdkVersion = 23
   const val targetSdkVersion = 30
   const val buildTools = "30.0.2"
-  const val versionCode = 4
-  const val versionName = "1.0.3"
+  const val versionCode = 5
+  const val versionName = "1.0.4"
 
   const val material = "1.4.0"
   const val lifecycleKtxViewModel = "2.4.0"
