@@ -1,6 +1,7 @@
 include ':app'
 include ':domain'
 include ':imagepreview'
+include ':listimport'
 include ':navigation'
 include ':resources:colors'
 include ':resources:drawables'

@@ -69,4 +69,9 @@ their undeployed units Delayed that are not using Special Deployment. Delayed un
   <string name="terrainlayout_15">Eerie Graveyard</string>
   <string name="terrainlayout_16">Shattered Bridge</string>
   <string name="terrainlayout_preview">Terrain Layout Preview</string>
+
+  <string name="listimport_import_from_clipboard">Load list from clipboard</string>
+  <string name="listimport_import_instructions_1">Select preview of your army list in NEW RECRUIT format\nSelect all text\nSelect \"SHARE\"\nSelect \"9th Age Quick Setup\" from the applications list.</string>
+  <string name="listimport_import_instructions_2">or</string>
+  <string name="listimport_import_instructions_3">Select preview of your army list in NEW RECRUIT format\nSelect all text\nSelect \"COPY\"\nCome back to 9th Age Quick Setup app\nSelect the button below.</string>
 </resources>

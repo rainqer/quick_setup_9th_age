@@ -42,6 +42,7 @@ dependencies {
   implementation(project(Modules.domain))
   implementation(project(Modules.drawables))
   implementation(project(Modules.imagepreview))
+  implementation(project(Modules.listimport))
   implementation(project(Modules.navigation))
   implementation(project(Modules.strings))
   implementation(project(Modules.summary))
