@@ -4,6 +4,11 @@
   <string name="enlarge">Enlarge</string>
   <string name="details">Details</string>
   <string name="deployment">Deployment</string>
+  <string name="ok">OK</string>
+  <string name="points">%d\u200Apts</string>
+  <string name="conflict_side_choose_hint">Army owner:</string>
+  <string name="conflict_side_me">This is my army</string>
+  <string name="conflict_side_opponent">This is my opponent\'s army</string>
   <string name="deployment_01">Frontline Clash</string>
   <string name="deployment_01_description">Deployment Zones are areas more than 12″ away from the Centre Line</string>
   <string name="deployment_02">Dawn Assault</string>
@@ -74,4 +79,5 @@ their undeployed units Delayed that are not using Special Deployment. Delayed un
   <string name="listimport_import_instructions_1">Select preview of your army list in NEW RECRUIT format\nSelect all text\nSelect \"SHARE\"\nSelect \"9th Age Quick Setup\" from the applications list.</string>
   <string name="listimport_import_instructions_2">or</string>
   <string name="listimport_import_instructions_3">Select preview of your army list in NEW RECRUIT format\nSelect all text\nSelect \"COPY\"\nCome back to 9th Age Quick Setup app\nSelect the button below.</string>
+  <string name="listimport_import_error">Could not import list based on text:</string>
 </resources>

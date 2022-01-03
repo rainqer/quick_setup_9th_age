@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  >
+
+  <ScrollView
+    android:id="@+id/listScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginBottom="1dp"
+    >
+
+    <LinearLayout
+      android:id="@+id/listElementsContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:showDividers="middle|beginning|end"
+      android:divider="@drawable/card_divider_horizontal"/>
+
+  </ScrollView>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/importListBottomPlaceholder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/screen_padding"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <TextView
+      android:id="@+id/armyOwnerSpinnerTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/conflict_side_choose_hint"
+      android:textAppearance="@style/Typography.Component.Title"
+      android:layout_marginBottom="@dimen/margin_vertical_medium"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/importListFromClipboardButton"/>
+
+    <Spinner
+      android:id="@+id/armyOwnerSpinner"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      style="@style/Typography.Component.Spinner"
+      android:layout_marginBottom="@dimen/margin_vertical_medium"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/armyOwnerSpinnerTitle"
+      android:layout_marginStart="@dimen/margin_horizontal_medium"
+      app:layout_constraintBottom_toTopOf="@id/importListFromClipboardButton"/>
+
+    <Button
+      android:id="@+id/importListFromClipboardButton"
+      style="@style/Typography.Component.Button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/ok"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

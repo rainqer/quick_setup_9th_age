@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string-array name="army_owner">
+    <item>@string/conflict_side_me</item>
+    <item>@string/conflict_side_opponent</item>
+  </string-array>
+
+</resources>

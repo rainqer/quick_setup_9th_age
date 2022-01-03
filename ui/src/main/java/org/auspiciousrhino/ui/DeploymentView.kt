@@ -10,8 +10,6 @@ import org.auspiciousrhino.domain.Deployment
 import android.animation.LayoutTransition
 
 
-
-
 class DeploymentView(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
 
   private val deploymentTitle
@@ -35,7 +33,12 @@ class DeploymentView(context: Context, attrs: AttributeSet) : LinearLayout(conte
     inflate(context, R.layout.view_deployment, this)
     orientation = VERTICAL
     layoutTransition = LayoutTransition()
-    val array = context.obtainStyledAttributes(attrs, R.styleable.DeploymentView, R.attr.deploymentViewStyle, 0)
+    val array = context.obtainStyledAttributes(
+      attrs,
+      R.styleable.DeploymentView,
+      R.attr.deploymentViewStyle,
+      0
+    )
     verbose = array.getBoolean(R.styleable.DeploymentView_deploymentview_verbose, true)
     array.recycle()
   }

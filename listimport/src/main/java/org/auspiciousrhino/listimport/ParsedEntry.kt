@@ -25,7 +25,13 @@ internal class ParsedEntry(private val entryLine: String) {
     pointValueAndName[NAME_ANE_DETAILS_INDEX].trim().split(",").firstOrNull()
 
   private fun parseEntryDetails(pointValueAndName: List<String>) =
-    pointValueAndName[NAME_ANE_DETAILS_INDEX].trim().split(",").drop(1).takeIf { it.isNotEmpty() }?.joinToString(", ")
+    pointValueAndName[NAME_ANE_DETAILS_INDEX]
+      .trim()
+      .split(",")
+      .drop(1)
+      .takeIf { it.isNotEmpty() }
+      ?.joinToString(", ")
+      ?.trim()
 }
 
 private const val POINT_VALUE_INDEX = 0

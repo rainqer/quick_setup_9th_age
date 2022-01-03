@@ -16,6 +16,6 @@ class ListImportViewModel(
 
   private fun parseArmyList(rawArmyList: String): ListImportState {
     val armyList = ParsedList(rawArmyList).list
-    return if (armyList.isEmpty) ListImportState.Empty() else ListImportState.Imported(armyList)
+    return if (armyList.isEmpty) ListImportState.Empty(rawArmyList) else ListImportState.Imported(armyList)
   }
 }

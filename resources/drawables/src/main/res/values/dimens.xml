@@ -3,6 +3,9 @@
   <dimen name="margin_vertical_small">4dp</dimen>
   <dimen name="margin_vertical_medium">8dp</dimen>
   <dimen name="margin_vertical_large">12dp</dimen>
+  <dimen name="margin_horizontal_small">4dp</dimen>
+  <dimen name="margin_horizontal_medium">8dp</dimen>
+  <dimen name="margin_horizontal_large">12dp</dimen>
   <dimen name="screen_padding">8dp</dimen>
 
   <dimen name="text_paragraph">16sp</dimen>
