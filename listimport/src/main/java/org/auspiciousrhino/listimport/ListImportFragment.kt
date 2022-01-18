@@ -2,26 +2,37 @@ package org.auspiciousrhino.listimport
 
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Context.CLIPBOARD_SERVICE
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import org.auspiciousrhino.domain.ArmyList
 import org.auspiciousrhino.listimport.databinding.ActivityListimportBinding
 import org.auspiciousrhino.ui.ArmyListEntryView
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
 
 
-class ListImportActivity : ComponentActivity() {
+class ListImportFragment : Fragment() {
 
   private lateinit var binding: ActivityListimportBinding
   private val model: ListImportViewModel by viewModel()
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+  override fun onCreateView(
+    inflater: LayoutInflater,
+    container: ViewGroup?,
+    savedInstanceState: Bundle?
+  ): View {
     binding = ActivityListimportBinding.inflate(layoutInflater)
-    setContentView(binding.root)
-    model.state.observe(this) {
+    return binding.root
+  }
+
+  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    super.onViewCreated(view, savedInstanceState)
+    model.state.observe(viewLifecycleOwner) {
       when (it) {
         is ListImportState.Empty -> setupErrorState(it.rawArmyList)
         is ListImportState.Imported -> setupImportedState(it.armyList)
@@ -37,7 +48,7 @@ class ListImportActivity : ComponentActivity() {
   }
 
   private fun importListBasedOnTextInClipboard() {
-    val text = (getSystemService(CLIPBOARD_SERVICE) as ClipboardManager)
+    val text = (requireActivity().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager)
       .primaryClip
       ?.getItemAt(0)
       ?.text
@@ -58,11 +69,11 @@ class ListImportActivity : ComponentActivity() {
     val padding = resources.getDimensionPixelOffset(R.dimen.screen_padding)
     binding.activityListimportImported.listElementsContainer.removeAllViews()
     armyList.entries
-      .map { ArmyListEntryView(this).apply { viewEntity = it } }
+      .map { ArmyListEntryView(requireContext()).apply { viewEntity = it } }
       .map { it.apply { setPadding(padding, padding, padding, padding) } }
       .forEach { binding.activityListimportImported.listElementsContainer.addView(it) }
     val arrayAdapter = ArrayAdapter.createFromResource(
-      this,
+      requireContext(),
       R.array.army_owner,
       android.R.layout.simple_spinner_dropdown_item
     )
@@ -73,7 +84,7 @@ class ListImportActivity : ComponentActivity() {
   companion object {
 
     fun intent(context: Context) =
-      Intent(context, ListImportActivity::class.java)
+      Intent(context, ListImportFragment::class.java)
   }
 }
 

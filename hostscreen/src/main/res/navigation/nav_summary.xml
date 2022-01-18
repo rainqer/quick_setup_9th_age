@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nav_summary"
+  app:startDestination="@id/summaryFragment"
+  >
+
+  <fragment
+    android:id="@+id/summaryFragment"
+    android:name="org.auspiciousrhino.summary.SummaryFragment"
+    android:label="SummaryFragment"
+    />
+  <fragment
+    android:id="@+id/listImportFragment"
+    android:name="org.auspiciousrhino.listimport.ListImportFragment"
+    android:label="ListImportFragment"
+    />
+</navigation>

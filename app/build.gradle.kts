@@ -41,6 +41,7 @@ dependencies {
   implementation(project(Modules.colors))
   implementation(project(Modules.domain))
   implementation(project(Modules.drawables))
+  implementation(project(Modules.hostscreen))
   implementation(project(Modules.imagepreview))
   implementation(project(Modules.listimport))
   implementation(project(Modules.navigation))

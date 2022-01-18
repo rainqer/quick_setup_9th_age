@@ -3,19 +3,12 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   package="org.auspiciousrhino.summary">
 
-  <application>
+<!--  <application>-->
 
-    <activity
-      android:name="org.auspiciousrhino.summary.SummaryActivity"
-      android:exported="true">
+<!--    <activity-->
+<!--      android:name="org.auspiciousrhino.summary.SummaryFragment"-->
+<!--      android:exported="true"/>-->
 
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-
-    </activity>
-
-  </application>
+<!--  </application>-->
 
 </manifest>
