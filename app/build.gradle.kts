@@ -38,6 +38,7 @@ android {
 
 
 dependencies {
+  implementation(project(Modules.armyListPreview))
   implementation(project(Modules.colors))
   implementation(project(Modules.domain))
   implementation(project(Modules.drawables))
@@ -54,4 +55,5 @@ dependencies {
   implementation("com.google.android.material:material:${Versions.material}")
 
   implementation("io.insert-koin:koin-android:${Versions.koin}")
+  implementation("androidx.navigation:navigation-ui-ktx:${Versions.navigation}")
 }

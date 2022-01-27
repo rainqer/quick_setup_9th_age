@@ -13,6 +13,7 @@ class QuickSetupApplication : Application() {
       androidContext(this@QuickSetupApplication)
       modules(
         appModule,
+        org.auspiciousrhino.armylistpreview.di.koinModule,
         org.auspiciousrhino.domain.di.koinModule,
         org.auspiciousrhino.listimport.di.koinModule,
         org.auspiciousrhino.summary.di.koinModule,

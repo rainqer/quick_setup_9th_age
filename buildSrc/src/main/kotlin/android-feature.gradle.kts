@@ -1,6 +1,7 @@
 plugins {
     id("android-lib")
     id("kotlin-android")
+    id("androidx.navigation.safeargs")
 }
 dependencies {
     implementation(project(Modules.navigation))

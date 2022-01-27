@@ -8,17 +8,17 @@
 
   <include
     android:id="@+id/activity_listimport_start"
-    layout="@layout/activity_listimport_start"
+    layout="@layout/fragment_listimport_start"
     />
 
   <include
     android:id="@+id/activity_listimport_error"
-    layout="@layout/activity_listimport_error"
+    layout="@layout/fragment_listimport_error"
     />
 
   <include
     android:id="@+id/activity_listimport_imported"
-    layout="@layout/activity_listimport_imported"
+    layout="@layout/fragment_listimport_imported"
     />
 
 </ViewAnimator>

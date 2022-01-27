@@ -1,4 +1,5 @@
 include ':app'
+include ':armylistpreview'
 include ':domain'
 include ':hostscreen'
 include ':imagepreview'

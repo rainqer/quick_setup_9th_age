@@ -3,7 +3,6 @@ package org.auspiciousrhino.hostscreen
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import org.auspiciousrhino.hostscreen.databinding.ActivityHostBinding
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 

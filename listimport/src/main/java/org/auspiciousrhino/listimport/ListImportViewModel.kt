@@ -18,4 +18,10 @@ class ListImportViewModel(
     val armyList = ParsedList(rawArmyList).list
     return if (armyList.isEmpty) ListImportState.Empty(rawArmyList) else ListImportState.Imported(armyList)
   }
+
+  fun onPreviewArmyListClicked() {
+    (state.value as? ListImportState.Imported)
+      ?.armyList
+      ?.let { armyList -> navigationEvents.postValue(NavigationEvent.PreviewList(armyList)) }
+  }
 }

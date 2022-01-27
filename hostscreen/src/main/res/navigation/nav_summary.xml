@@ -11,9 +11,5 @@
     android:name="org.auspiciousrhino.summary.SummaryFragment"
     android:label="SummaryFragment"
     />
-  <fragment
-    android:id="@+id/listImportFragment"
-    android:name="org.auspiciousrhino.listimport.ListImportFragment"
-    android:label="ListImportFragment"
-    />
+
 </navigation>

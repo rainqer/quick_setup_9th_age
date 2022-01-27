@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nav_armylists"
+  app:startDestination="@id/listImportFragment"
+  >
+
+  <fragment
+    android:id="@+id/listImportFragment"
+    android:name="org.auspiciousrhino.listimport.ListImportFragment"
+    android:label="ListImportFragment"
+    >
+    <action
+      android:id="@+id/action_listImportFragment_to_armyListPreviewFragment"
+      app:destination="@id/armyListPreviewFragment" />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/armyListPreviewFragment"
+    android:name="org.auspiciousrhino.armylistpreview.ArmyListPreviewFragment"
+    android:label="SummaryFragment"
+    />
+</navigation>

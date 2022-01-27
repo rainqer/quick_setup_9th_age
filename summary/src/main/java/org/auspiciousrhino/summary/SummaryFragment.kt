@@ -42,7 +42,7 @@ class SummaryFragment : Fragment() {
       binding.secondaryObjective.viewEntity = summaryState.configuration.secondaryObjective
     }
     model.navigationEvents.observe(viewLifecycleOwner) { navigationEvent ->
-      navigation.consume(navigationEvent, requireContext())
+      navigation.consume(navigationEvent, view)
     }
     model.init()
     binding.enlargeTerrain.setOnClickListener { model.onTerrainLayoutEnlargeClicked() }

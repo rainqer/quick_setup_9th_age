@@ -3,6 +3,7 @@ plugins {
 }
 
 dependencies {
+  implementation(project(Modules.armyListPreview))
   implementation(project(Modules.domain))
   implementation(project(Modules.drawables))
   implementation(project(Modules.listimport))
@@ -11,6 +12,6 @@ dependencies {
   implementation(project(Modules.ui))
 
   implementation("com.google.android.material:material:${Versions.material}")
-  implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
-  implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+  implementation("androidx.navigation:navigation-fragment-ktx:${Versions.navigation}")
+  implementation("androidx.navigation:navigation-ui-ktx:${Versions.navigation}")
 }
