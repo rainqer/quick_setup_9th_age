@@ -6,9 +6,10 @@
   android:layout_height="wrap_content">
 
   <LinearLayout
-    android:id="@+id/textView"
+    android:id="@+id/summaryRoot"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
     android:orientation="vertical">
 
 
@@ -65,6 +66,7 @@
       android:layout_marginTop="@dimen/margin_vertical_medium"
       android:background="@color/white"
       android:orientation="vertical"
+      android:animateLayoutChanges="true"
       android:padding="@dimen/screen_padding">
 
       <TextView
@@ -77,6 +79,7 @@
         android:id="@+id/deployment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
         app:deploymentview_verbose="false" />
 
       <Button
@@ -96,6 +99,7 @@
       android:layout_marginTop="@dimen/margin_vertical_medium"
       android:background="@color/white"
       android:orientation="vertical"
+      android:animateLayoutChanges="true"
       android:padding="@dimen/screen_padding">
 
       <TextView
@@ -108,6 +112,7 @@
         android:id="@+id/secondaryObjective"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
         app:secondaryobjectiveview_verbose="false" />
 
       <Button

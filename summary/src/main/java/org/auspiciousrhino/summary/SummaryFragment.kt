@@ -1,5 +1,6 @@
 package org.auspiciousrhino.summary
 
+import android.animation.LayoutTransition
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -36,6 +37,13 @@ class SummaryFragment : Fragment() {
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
+    observeStates(view)
+    enableAnimations()
+    setupClickListeners()
+    model.init()
+  }
+
+  private fun observeStates(view: View) {
     model.state.observe(viewLifecycleOwner) { summaryState ->
       binding.terrainLayout.viewEntity = summaryState.configuration.map
       binding.deployment.viewEntity = summaryState.configuration.deployment
@@ -44,7 +52,9 @@ class SummaryFragment : Fragment() {
     model.navigationEvents.observe(viewLifecycleOwner) { navigationEvent ->
       navigation.consume(navigationEvent, view)
     }
-    model.init()
+  }
+
+  private fun setupClickListeners() {
     binding.enlargeTerrain.setOnClickListener { model.onTerrainLayoutEnlargeClicked() }
     binding.terrainLayout.setOnClickListener { model.onTerrainLayoutEnlargeClicked() }
     binding.deploymentCard.setOnClickListener {
@@ -59,7 +69,15 @@ class SummaryFragment : Fragment() {
     binding.secondaryObjectiveDetailsButton.setOnClickListener {
       binding.secondaryObjective.verbose = !binding.secondaryObjective.verbose
     }
-    binding.generateNewConfigurationButton.setOnClickListener { model.generateNewConfiguration() }
+    binding.generateNewConfigurationButton.setOnClickListener {
+      model.generateNewConfiguration()
+    }
+  }
+
+  private fun enableAnimations() {
+    binding.summaryRoot.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.deploymentCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.secondaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
   }
 
   companion object {
