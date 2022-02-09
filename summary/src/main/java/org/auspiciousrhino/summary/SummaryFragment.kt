@@ -47,8 +47,14 @@ class SummaryFragment : Fragment() {
     model.init()
     binding.enlargeTerrain.setOnClickListener { model.onTerrainLayoutEnlargeClicked() }
     binding.terrainLayout.setOnClickListener { model.onTerrainLayoutEnlargeClicked() }
+    binding.deploymentCard.setOnClickListener {
+      binding.deployment.verbose = !binding.deployment.verbose
+    }
     binding.deploymentDetailsButton.setOnClickListener {
       binding.deployment.verbose = !binding.deployment.verbose
+    }
+    binding.secondaryObjectiveCard.setOnClickListener {
+      binding.secondaryObjective.verbose = !binding.secondaryObjective.verbose
     }
     binding.secondaryObjectiveDetailsButton.setOnClickListener {
       binding.secondaryObjective.verbose = !binding.secondaryObjective.verbose
