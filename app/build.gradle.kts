@@ -39,6 +39,7 @@ android {
 
 dependencies {
   implementation(project(Modules.armyListPreview))
+  implementation(project(Modules.battleoutcome))
   implementation(project(Modules.colors))
   implementation(project(Modules.domain))
   implementation(project(Modules.drawables))

@@ -4,6 +4,7 @@ plugins {
 
 dependencies {
   implementation(project(Modules.armyListPreview))
+  implementation(project(Modules.battleoutcome))
   implementation(project(Modules.domain))
   implementation(project(Modules.drawables))
   implementation(project(Modules.listimport))

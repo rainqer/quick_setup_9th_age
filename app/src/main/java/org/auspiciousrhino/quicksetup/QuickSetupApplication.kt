@@ -14,6 +14,7 @@ class QuickSetupApplication : Application() {
       modules(
         appModule,
         org.auspiciousrhino.armylistpreview.di.koinModule,
+        org.auspiciousrhino.battleoutcome.di.koinModule,
         org.auspiciousrhino.domain.di.koinModule,
         org.auspiciousrhino.listimport.di.koinModule,
         org.auspiciousrhino.summary.di.koinModule,

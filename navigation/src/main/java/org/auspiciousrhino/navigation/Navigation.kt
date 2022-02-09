@@ -11,6 +11,7 @@ class Navigation constructor(
     when (navigationEvent) {
       is NavigationEvent.PreviewTerrain -> previewTerrain(navigationEvent.terrainLayout, rootView.context)
       is NavigationEvent.PreviewList -> previewArmyList(navigationEvent.armyList, rootView.findNavController())
+      is NavigationEvent.GoToBattleOutcome -> goToBattleOutcome(rootView.findNavController())
     }
   }
 }

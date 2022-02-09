@@ -1,9 +1,8 @@
 package org.auspiciousrhino.quicksetup
 
 import android.content.Context
-import android.view.View
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
+import org.auspiciousrhino.battleoutcome.BattleOutcomeFragmentDirections
 import org.auspiciousrhino.domain.ArmyList
 import org.auspiciousrhino.domain.TerrainLayout
 import org.auspiciousrhino.imagepreview.ImagePreviewActivity
@@ -18,7 +17,13 @@ class QuickSetupAppNavigation : QuickSetupNavigation {
 
   override fun previewArmyList(armyList: ArmyList, navController: NavController) {
     navController.navigate(
-      ListImportFragmentDirections.actionListImportFragmentToArmyListPreviewFragment()
+      BattleOutcomeFragmentDirections.actionBattleOutcomeFragmentToArmyListPreviewFragment()
+    )
+  }
+
+  override fun goToBattleOutcome(navController: NavController) {
+    navController.navigate(
+      ListImportFragmentDirections.actionListImportFragmentToBattleOutcomeFragment()
     )
   }
 }

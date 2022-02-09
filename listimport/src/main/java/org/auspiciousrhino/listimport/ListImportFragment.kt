@@ -38,9 +38,9 @@ class ListImportFragment : Fragment() {
     super.onViewCreated(view, savedInstanceState)
     model.state.observe(viewLifecycleOwner) {
       when (it) {
-        is ListImportState.Empty -> setupErrorState(it.rawArmyList)
-        is ListImportState.Imported -> setupImportedState(it.armyList)
         is ListImportState.Start -> setupStartState()
+        is ListImportState.Empty -> setupErrorState(it.rawArmyList)
+        is ListImportState.Imported -> { /*no-op*/ }
       }
     }
     model.navigationEvents.observe(viewLifecycleOwner) {
@@ -72,13 +72,6 @@ class ListImportFragment : Fragment() {
     binding.activityListimportError.incorrectList.text = rawArmyList
   }
 
-  private fun setupImportedState(armyList: ArmyList) {
-    binding.activityListimportImported.previewList.setOnClickListener {
-      model.onPreviewArmyListClicked()
-    }
-    binding.importListViewAnimator.displayedChild = IMPORTED_INDEX
-  }
-
   companion object {
 
     fun intent(context: Context) =
@@ -88,4 +81,3 @@ class ListImportFragment : Fragment() {
 
 private const val START_INDEX = 0
 private const val ERROR_INDEX = 1
-private const val IMPORTED_INDEX = 2

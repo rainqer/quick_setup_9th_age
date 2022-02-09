@@ -7,6 +7,7 @@
   <string name="details">Details</string>
   <string name="deployment">Deployment</string>
   <string name="ok">OK</string>
+  <string name="preview_list">Preview list</string>
   <string name="points">%d\u200Apts</string>
   <string name="conflict_side_choose_hint">Army owner:</string>
   <string name="conflict_side_me">This is my army</string>

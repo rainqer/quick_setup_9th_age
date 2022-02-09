@@ -16,9 +16,4 @@
     layout="@layout/fragment_listimport_error"
     />
 
-  <include
-    android:id="@+id/activity_listimport_imported"
-    layout="@layout/fragment_listimport_imported"
-    />
-
 </ViewAnimator>

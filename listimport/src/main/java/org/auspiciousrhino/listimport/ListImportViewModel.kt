@@ -11,17 +11,15 @@ class ListImportViewModel(
   val navigationEvents = MutableLiveData<NavigationEvent>()
 
   fun importArmyList(rawArmyList: String) {
-    state.postValue(parseArmyList(rawArmyList))
+    val parseArmyListState = parseArmyList(rawArmyList)
+    state.postValue(parseArmyListState)
+    if (parseArmyListState is ListImportState.Imported) {
+      navigationEvents.postValue(NavigationEvent.GoToBattleOutcome())
+    }
   }
 
   private fun parseArmyList(rawArmyList: String): ListImportState {
     val armyList = ParsedList(rawArmyList).list
     return if (armyList.isEmpty) ListImportState.Empty(rawArmyList) else ListImportState.Imported(armyList)
-  }
-
-  fun onPreviewArmyListClicked() {
-    (state.value as? ListImportState.Imported)
-      ?.armyList
-      ?.let { armyList -> navigationEvents.postValue(NavigationEvent.PreviewList(armyList)) }
   }
 }

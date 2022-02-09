@@ -12,9 +12,19 @@
     android:label="ListImportFragment"
     >
     <action
-      android:id="@+id/action_listImportFragment_to_armyListPreviewFragment"
-      app:destination="@id/armyListPreviewFragment" />
+      android:id="@+id/action_listImportFragment_to_battleOutcomeFragment"
+      app:destination="@id/battleOutcomeFragment" />
 
+  </fragment>
+
+  <fragment
+    android:id="@+id/battleOutcomeFragment"
+    android:name="org.auspiciousrhino.battleoutcome.BattleOutcomeFragment"
+    android:label="BattleOutcome"
+    >
+    <action
+      android:id="@+id/action_battleOutcomeFragment_to_armyListPreviewFragment"
+      app:destination="@id/armyListPreviewFragment" />
   </fragment>
 
   <fragment

@@ -1,5 +1,6 @@
 include ':app'
 include ':armylistpreview'
+include ':battleoutcome'
 include ':domain'
 include ':hostscreen'
 include ':imagepreview'

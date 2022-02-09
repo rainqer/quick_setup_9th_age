@@ -7,4 +7,5 @@ sealed class NavigationEvent {
 
   class PreviewTerrain(val terrainLayout: TerrainLayout) : NavigationEvent()
   class PreviewList(val armyList: ArmyList) : NavigationEvent()
+  class GoToBattleOutcome : NavigationEvent()
 }
