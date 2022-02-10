@@ -5,10 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import org.auspiciousrhino.armylistpreview.databinding.FragmentArmylistpreviewBinding
 import org.auspiciousrhino.domain.ArmyList
+import org.auspiciousrhino.navigation.Navigation
+import org.auspiciousrhino.navigation.NavigationEvent
 import org.auspiciousrhino.ui.ArmyListEntryView
+import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -16,6 +20,7 @@ class ArmyListPreviewFragment : Fragment() {
 
   private lateinit var binding: FragmentArmylistpreviewBinding
   private val model: ArmyListPreviewViewModel by viewModel()
+  private val navigation: Navigation by inject()
 
   override fun onCreateView(
     inflater: LayoutInflater,
@@ -32,6 +37,9 @@ class ArmyListPreviewFragment : Fragment() {
       when (it) {
         is ArmyListPreviewState.Start -> setupView(it.armyList)
       }
+    }
+    requireActivity().onBackPressedDispatcher.addCallback(this) {
+      navigation.consume(NavigationEvent.PopBackToBattleOutCome(), requireView())
     }
   }
 

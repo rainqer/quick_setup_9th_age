@@ -13,7 +13,10 @@
     >
     <action
       android:id="@+id/action_listImportFragment_to_battleOutcomeFragment"
-      app:destination="@id/battleOutcomeFragment" />
+      app:destination="@id/battleOutcomeFragment"
+      app:popUpTo="@id/listImportFragment"
+      app:popUpToInclusive="true"
+      />
 
   </fragment>
 
@@ -24,12 +27,20 @@
     >
     <action
       android:id="@+id/action_battleOutcomeFragment_to_armyListPreviewFragment"
-      app:destination="@id/armyListPreviewFragment" />
+      app:destination="@id/armyListPreviewFragment"
+      />
   </fragment>
 
   <fragment
     android:id="@+id/armyListPreviewFragment"
     android:name="org.auspiciousrhino.armylistpreview.ArmyListPreviewFragment"
     android:label="SummaryFragment"
-    />
+    >
+    <action
+      android:id="@+id/action_battleOutcomeFragment_popBack"
+      app:destination="@id/battleOutcomeFragment"
+      app:popUpTo="@id/battleOutcomeFragment"
+      app:popUpToInclusive="true"
+      />
+  </fragment>
 </navigation>
