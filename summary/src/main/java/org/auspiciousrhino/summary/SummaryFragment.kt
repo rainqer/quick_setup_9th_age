@@ -30,6 +30,11 @@ class SummaryFragment : Fragment() {
     return binding.root
   }
 
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    model.init()
+  }
+
   override fun onDestroyView() {
     _binding = null
     super.onDestroyView()
@@ -40,7 +45,6 @@ class SummaryFragment : Fragment() {
     observeStates(view)
     enableAnimations()
     setupClickListeners()
-    model.init()
   }
 
   private fun observeStates(view: View) {
