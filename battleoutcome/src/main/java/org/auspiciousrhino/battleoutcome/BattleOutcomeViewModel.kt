@@ -14,7 +14,7 @@ class BattleOutcomeViewModel(
   val navigationEvents = MutableLiveData<NavigationEvent>()
 
   fun start() {
-    val initialState = armyListRepository.armyList
+    val initialState = armyListRepository.myArmyList
       ?.let { BattleOutcomeState.Start(it) }
       ?: BattleOutcomeState.Error()
     state.postValue(initialState)

@@ -22,6 +22,8 @@ class ArmyListPreviewFragment : Fragment() {
   private val model: ArmyListPreviewViewModel by viewModel()
   private val navigation: Navigation by inject()
 
+  private val armyListAdapter = ArmyListAdapter()
+
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
@@ -33,28 +35,49 @@ class ArmyListPreviewFragment : Fragment() {
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
+    observerStateEvents()
+    observeNavigationEvents()
+    setupButtons()
+    setupInitialViews()
+    model.start()
+  }
+
+  private fun observerStateEvents() {
     model.state.observe(viewLifecycleOwner) {
       when (it) {
         is ArmyListPreviewState.Start -> setupView(it.armyList)
       }
     }
-    requireActivity().onBackPressedDispatcher.addCallback(this) {
-      navigation.consume(NavigationEvent.PopBackToBattleOutCome(), requireView())
+  }
+
+  private fun observeNavigationEvents() {
+    model.navigationEvents.observe(viewLifecycleOwner) {
+      navigation.consume(it, binding.root)
     }
   }
 
-  private fun setupView(armyList: ArmyList) {
-    val padding = resources.getDimensionPixelOffset(R.dimen.screen_padding)
-    binding.listElementsContainer.removeAllViews()
-    armyList.entries
-      .map { ArmyListEntryView(requireContext()).apply { viewEntity = it } }
-      .map { it.apply { setPadding(padding, padding, padding, padding) } }
-      .forEach { binding.listElementsContainer.addView(it) }
-    val arrayAdapter = ArrayAdapter.createFromResource(
+  private fun setupButtons() {
+    requireActivity().onBackPressedDispatcher.addCallback(this) {
+      navigation.consume(NavigationEvent.PopBackToBattleOutCome(), requireView())
+    }
+    binding.buttonOk.setOnClickListener {
+      model.onOkPressed()
+    }
+  }
+
+  private fun setupInitialViews() {
+    binding.recyclerViewArmyListPreview.adapter = armyListAdapter
+    binding.recyclerViewArmyListPreview.addItemDecoration(
+      ListEntryDecoration(resources.getDimensionPixelSize(R.dimen.screen_padding))
+    )
+    binding.armyOwnerSpinner.adapter = ArrayAdapter.createFromResource(
       requireContext(),
       R.array.army_owner,
       android.R.layout.simple_spinner_dropdown_item
     )
-    binding.armyOwnerSpinner.adapter = arrayAdapter
+  }
+
+  private fun setupView(armyList: ArmyList) {
+    armyListAdapter.submitList(armyList.entries)
   }
 }

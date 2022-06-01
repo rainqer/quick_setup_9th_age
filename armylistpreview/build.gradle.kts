@@ -5,5 +5,5 @@ plugins {
 dependencies {
   implementation(project(Modules.domain))
   implementation(project(Modules.ui))
-  testImplementation("junit:junit:4.13")
+  implementation(project(Modules.storage))
 }

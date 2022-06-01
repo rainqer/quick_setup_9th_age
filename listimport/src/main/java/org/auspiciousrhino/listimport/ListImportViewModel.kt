@@ -12,6 +12,12 @@ class ListImportViewModel(
   val state = MutableLiveData<ListImportState>()
   val navigationEvents = MutableLiveData<NavigationEvent>()
 
+  fun start() {
+    if (armyListRepository.myArmyList != null) {
+      navigationEvents.postValue(NavigationEvent.GoToBattleOutcome())
+    }
+  }
+
   fun importArmyList(rawArmyList: String) {
     val parsedArmyListState = parseArmyList(rawArmyList)
     storeArmyList(parsedArmyListState)
@@ -23,12 +29,16 @@ class ListImportViewModel(
 
   private fun storeArmyList(parsedArmyListState: ListImportState) {
     if (parsedArmyListState is ListImportState.Imported) {
-      armyListRepository.armyList = parsedArmyListState.armyList
+      armyListRepository.myArmyList = parsedArmyListState.armyList
     }
   }
 
   private fun parseArmyList(rawArmyList: String): ListImportState {
     val armyList = ParsedList(rawArmyList).list
-    return if (armyList.isEmpty) ListImportState.Empty(rawArmyList) else ListImportState.Imported(armyList)
+    return if (armyList.isEmpty) {
+      ListImportState.Empty(rawArmyList)
+    } else {
+      ListImportState.Imported(armyList)
+    }
   }
 }

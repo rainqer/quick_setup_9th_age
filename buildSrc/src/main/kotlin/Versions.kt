@@ -15,6 +15,7 @@ object Versions {
   const val ktxActivities = "1.4.0"
   const val photoView = "1.2.4"
   const val constraintLayout = "2.1.2"
+  const val recyclerView = "1.2.1"
 
   const val koin = "3.1.4"
 

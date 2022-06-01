@@ -16,7 +16,7 @@ class ArmyListRepository internal constructor(
     Gson()
   )
 
-  var armyList: ArmyList?
+  var myArmyList: ArmyList?
     get() = sharedPreferences.getString(ARMY_KEY, "")
       .takeIf { !it.isNullOrBlank() }
       ?.let { gson.fromJson(it, ArmyList::class.java) }

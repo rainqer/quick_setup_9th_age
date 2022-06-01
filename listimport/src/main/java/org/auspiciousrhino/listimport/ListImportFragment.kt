@@ -52,6 +52,7 @@ class ListImportFragment : Fragment() {
     binding.activityListimportError.importListFromClipboardButton.setOnClickListener {
       importListBasedOnTextInClipboard()
     }
+    model.start()
   }
 
   private fun importListBasedOnTextInClipboard() {
