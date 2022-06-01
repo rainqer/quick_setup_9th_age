@@ -6,5 +6,5 @@ import org.koin.dsl.module
 
 val koinModule = module {
 
-  viewModel { ListImportViewModel() }
+  viewModel { ListImportViewModel(get()) }
 }

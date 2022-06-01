@@ -48,6 +48,7 @@ dependencies {
   implementation(project(Modules.listimport))
   implementation(project(Modules.navigation))
   implementation(project(Modules.strings))
+  implementation(project(Modules.storage))
   implementation(project(Modules.summary))
   implementation(project(Modules.ui))
 

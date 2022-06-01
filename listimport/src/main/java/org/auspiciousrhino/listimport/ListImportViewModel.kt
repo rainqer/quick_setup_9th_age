@@ -3,18 +3,27 @@ package org.auspiciousrhino.listimport
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import org.auspiciousrhino.navigation.NavigationEvent
+import org.auspiciousrhino.storage.ArmyListRepository
 
 class ListImportViewModel(
+  private val armyListRepository: ArmyListRepository
 ) : ViewModel() {
 
   val state = MutableLiveData<ListImportState>()
   val navigationEvents = MutableLiveData<NavigationEvent>()
 
   fun importArmyList(rawArmyList: String) {
-    val parseArmyListState = parseArmyList(rawArmyList)
-    state.postValue(parseArmyListState)
-    if (parseArmyListState is ListImportState.Imported) {
+    val parsedArmyListState = parseArmyList(rawArmyList)
+    storeArmyList(parsedArmyListState)
+    state.postValue(parsedArmyListState)
+    if (parsedArmyListState is ListImportState.Imported) {
       navigationEvents.postValue(NavigationEvent.GoToBattleOutcome())
+    }
+  }
+
+  private fun storeArmyList(parsedArmyListState: ListImportState) {
+    if (parsedArmyListState is ListImportState.Imported) {
+      armyListRepository.armyList = parsedArmyListState.armyList
     }
   }
 

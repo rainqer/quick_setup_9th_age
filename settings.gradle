@@ -9,6 +9,7 @@ include ':navigation'
 include ':resources:colors'
 include ':resources:drawables'
 include ':resources:strings'
+include ':storage'
 include ':summary'
 include ':ui'
 rootProject.name = "QuickStart"

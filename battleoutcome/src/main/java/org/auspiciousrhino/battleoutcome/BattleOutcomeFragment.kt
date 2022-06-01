@@ -17,6 +17,11 @@ class BattleOutcomeFragment : Fragment() {
   private val model: BattleOutcomeViewModel by viewModel()
   private val navigation: Navigation by inject()
 
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    model.start()
+  }
+
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
@@ -41,12 +46,16 @@ class BattleOutcomeFragment : Fragment() {
   private fun observeState() {
     model.state.observe(viewLifecycleOwner) {
       when (it) {
-        is BattleOutcomeState.Start -> { /*todo*/
-        }
+        is BattleOutcomeState.Start -> render(it)
+        is BattleOutcomeState.Error -> TODO()
       }
     }
     model.navigationEvents.observe(viewLifecycleOwner) {
       navigation.consume(it, requireView())
     }
+  }
+
+  private fun render(viewState: BattleOutcomeState.Start) {
+    binding.testListEntry.viewEntity = viewState.armyList.entries.first()
   }
 }

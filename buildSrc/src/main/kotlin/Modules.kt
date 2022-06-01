@@ -10,6 +10,7 @@ object Modules {
   const val listimport = ":listimport"
   const val navigation = ":navigation"
   const val strings = ":resources:strings"
+  const val storage = ":storage"
   const val summary = ":summary"
   const val ui = ":ui"
 }
