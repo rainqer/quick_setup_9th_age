@@ -1,7 +1,7 @@
 [versions]
 navigation = "2.8.5"
 kotlin-gradle-plugin = "1.6.0"
-gradle = "8.7.3"
+gradle = "8.5.0"
 gradle-plugin = "1.6.0"
 kotlin = "1.9.24"
 material = "1.6.0"

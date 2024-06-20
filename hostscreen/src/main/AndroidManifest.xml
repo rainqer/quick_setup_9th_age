@@ -7,6 +7,7 @@
     <activity
       android:name="org.auspiciousrhino.quicksetup.hostscreen.HostActivity"
       android:exported="true"
+      android:screenOrientation="portrait"
       android:resizeableActivity="true">
 
       <intent-filter>

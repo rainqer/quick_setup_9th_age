@@ -5,9 +5,10 @@ plugins {
 
 android {
   compileSdk = Versions.compileSdkVersion
-  namespace = "org.auspiciousrhino.quicksetup.app"
+  namespace = "org.auspiciousrhino.quicksetup"
 
   defaultConfig {
+    targetSdk = Versions.compileSdkVersion
     minSdk = Versions.minSdkVersion
     versionCode = Versions.versionCode
     versionName = Versions.versionName
