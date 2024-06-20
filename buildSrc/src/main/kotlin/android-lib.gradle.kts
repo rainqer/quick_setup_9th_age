@@ -5,36 +5,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Versions.compileSdkVersion)
-
-    defaultConfig {
-        minSdkVersion(Versions.minSdkVersion)
-        targetSdkVersion(Versions.targetSdkVersion)
-        versionCode = Versions.versionCode
-        versionName = Versions.versionName
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
-    buildTypes {
-        getByName("debug") {
-            isMinifyEnabled = false
-            isDebuggable = true
-            isJniDebuggable = true
-        }
-        getByName("release") {
-            isMinifyEnabled = true
-            isDebuggable = false
-        }
-    }
-
+    compileSdk = Versions.compileSdkVersion
+    buildToolsVersion = Versions.buildTools
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
     buildFeatures {
         viewBinding = true
     }

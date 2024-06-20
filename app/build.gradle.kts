@@ -4,8 +4,8 @@ plugins {
 }
 
 android {
-  compileSdkVersion(Versions.compileSdkVersion)
-  buildToolsVersion(Versions.buildTools)
+  compileSdk = Versions.compileSdkVersion
+  buildToolsVersion = Versions.buildTools
 
   defaultConfig {
     minSdkVersion(Versions.minSdkVersion)
@@ -15,8 +15,8 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
   }
 
   buildTypes {
