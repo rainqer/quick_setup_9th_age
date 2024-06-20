@@ -30,7 +30,7 @@ internal val DEPLOYMENT_05 = Deployment(
 )
 internal val DEPLOYMENT_06 = Deployment(
   name = R.string.deployment_06,
-  image = R.drawable.deployment_06_marching_columns,
+  image = R.drawable.deployment_06_surging_tide,
   description = R.string.deployment_06_description
 )
 

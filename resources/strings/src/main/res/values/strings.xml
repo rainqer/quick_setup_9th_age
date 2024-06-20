@@ -23,8 +23,13 @@
   <string name="deployment_04_description">The player choosing the Deployment Zone decides if they want to be the attacker or the defender. The attacker must deploy more than 9″ from the Centre Line if entirely within a quarter of the board’s length from either short Board Edge (18″ on a 72″ board), and more than 15″from the Centre Line elsewhere. The defender does the opposite: more than 15″ away from the Centre Line if within a quarter of the board’s length from the short Board Edge, and more than 9″ away from the Centre Line elsewhere.</string>
   <string name="deployment_05">Refused Flank</string>
   <string name="deployment_05_description">The board is divided into halves by a diagonal line across the board. Whoever gets to choose the Deployment Zone decides which diagonal to use. Deployment Zones are areas more than 9″ away from this line.</string>
-  <string name="deployment_06">Marching Columns</string>
-  <string name="deployment_06_description">Deployment Zones are areas more than 12″ away from the Centre Line.\n\nEach player must choose a short Board Edge when deploying their first unit. Each unit this player deploys
+  <string name="deployment_06">Surging Tide</string>
+  <string name="deployment_06_legacy">Marching Columns</string>
+  <string name="deployment_06_description">Deployment Zones are areas more than 12′′ away from the Centre Line and 6” from the short table edges.
+On each player’s first deployment turn, the player must choose to either:
+1. Deploy their whole army, following the normal Deployment Rules, or
+2. Deploy only a single unit. If both players used this option, then in all remaining deployment turns players must deploy units one at a time. In this case, the player that finished deploying first gains (only) a +1 modifier on the roll for first turn</string>
+  <string name="deployment_06_description_legacy">Deployment Zones are areas more than 12″ away from the Centre Line.\n\nEach player must choose a short Board Edge when deploying their first unit. Each unit this player deploys
 afterwards must be deployed with its Centre farther away from the chosen short Board Edge than the Centre of the last unit this player deployed (measure from the closest point on the short Board Edge). Characters, War Machines, War Platforms, and Scouting units
 ignore these rules.\n\nDuring their first 3 deployment turns, each player must deploy a single unit if possible, and cannot deploy any Characters, War Machines, or War Platforms unless they have to.\n\nInstead of deploying a unit, a player may choose to make all
 their undeployed units Delayed that are not using Special Deployment. Delayed units follow the rules for Ambushing units with the following exceptions:\n\n
@@ -50,13 +55,30 @@ their undeployed units Delayed that are not using Special Deployment. Delayed un
   <string name="secondaryobjective_04_description_short">Desecrate your opponent’s holy ground while protecting yours.</string>
   <string name="secondaryobjective_04_description">After Spell Selection (at the end of step 7 of the PreGame Sequence), both players choose a Terrain Feature that isn’t Impassable Terrain and that is not fully inside their Deployment Zone, starting with the player who chose their Deployment Zone (note that both players may choose the same Terrain Feature).
     \n\nA player captures their opponent’s chosen Terrain Feature if any of the player’s Scoring Units are inside that Terrain Feature at the end of the game. If a player captures their opponent’s chosen Terrain Feature while not allowing their own to be captured, they win this Secondary Objective.</string>
-  <string name="secondaryobjective_05">Capture the Flags</string>
-  <string name="secondaryobjective_05_description_short">Valuable targets must be annihilated.</string>
-  <string name="secondaryobjective_05_description">After Spell Selection (at the end of step 7 of the PreGame Sequence), mark all Scoring Units on both players’ Army Lists. If either player has fewer than 3 marked units, their opponent must mark enough units from this player’s Army List so that there are exactly 3 marked units in the army, starting with the player who chose their Deployment Zone.
+  <string name="secondaryobjective_05">Breaking Flags</string>
+  <string name="secondaryobjective_05_description_short">Invade the enemy territory and destroy valuable targets.</string>
+  <string name="secondaryobjective_05_description">After Spell Selection (at the end of step 7 of the Pre-Game Sequence), mark all Scoring Units on both players’ Army Lists.
+At the end of the game, a Player is awarded Victory Counters for the following:
+● Each marked enemy unit removed as a casualty during the game.
+● Each marked enemy unit that is both Fleeing and Shattered.
+● Each marked friendly unit inside the opponent Deployment Zone.
+The player with the most Victory Counters wins this Secondary Objective.
+Rules that have special interactions with “Capture the Flags” Secondary Objective (e.g. "Bestial Bulk"
+and "Drunkard - Sober"), follows the same rules when playing this Secondary Objective.
+</string>
+  <string name="secondaryobjective_06">Hold the Targets</string>
+  <string name="secondaryobjective_06_description_short">Hold critical resources which must not fall into enemy hands.</string>
+  <string name="secondaryobjective_06_description">Immediately after determining Deployment Zones, both players place one marker on the Battlefield, starting with the player who chose their Deployment Zone. Each player must place the marker with its centre on a point that is more than 12′′ away from their Deployment Zone and at least a third of the long Board Edge length (24′′ on a standard board) from the point marked by the other marker.
+A marker is controlled by the player with the most Scoring Units within 6′′ of the centre of the marker. If a unit is within 6′′ of the centres of both markers, it only counts as within 6′′ of the centre of the marker which is closest to its Centre (randomise if both markers’ centres are equally close).
+At the end of each Game Turn after the first, a Victory Counter is awarded to the Player which controls the most markers. At the end of the game, the player with the most such Victory Counters wins this Secondary Objective.</string>
+
+  <string name="secondaryobjective_05_legacy">Breaking flags</string>
+  <string name="secondaryobjective_05_description_short_legacy">Valuable targets must be annihilated.</string>
+  <string name="secondaryobjective_05_description_legacy">After Spell Selection (at the end of step 7 of the PreGame Sequence), mark all Scoring Units on both players’ Army Lists. If either player has fewer than 3 marked units, their opponent must mark enough units from this player’s Army List so that there are exactly 3 marked units in the army, starting with the player who chose their Deployment Zone.
     \n\nThe player who has the lowest number of their marked units removed as casualties at the end of the game wins this Secondary Objective.</string>
-  <string name="secondaryobjective_06">Secure Target</string>
-  <string name="secondaryobjective_06_description_short">Critical resources must not fall into enemy hands.</string>
-  <string name="secondaryobjective_06_description">Immediately after determining Deployment Zones, both players place one marker on the Battlefield, starting with the player who chose their Deployment Zone. Each player must place the marker with its centre on a point that is more than 12″ away from their Deployment Zone and at least a third of the long Board Edge length (24″ on a standard board) from the point marked by the other marker.
+  <string name="secondaryobjective_06_legacy">Secure Target</string>
+  <string name="secondaryobjective_06_description_short_legacy">Critical resources must not fall into enemy hands.</string>
+  <string name="secondaryobjective_06_description_legacy">Immediately after determining Deployment Zones, both players place one marker on the Battlefield, starting with the player who chose their Deployment Zone. Each player must place the marker with its centre on a point that is more than 12″ away from their Deployment Zone and at least a third of the long Board Edge length (24″ on a standard board) from the point marked by the other marker.
     \n\nAt the end of the game, the player controlling the most markers wins this Secondary Objective. A marker is controlled by the player with the most Scoring Units within 6″ of the centre of the marker. If a unit is within 6″ of the centres of both markers, it only counts as within 6″ of the centre of the marker which is closest to its Centre (randomise if both markers’ centres are equally close).</string>
 
 

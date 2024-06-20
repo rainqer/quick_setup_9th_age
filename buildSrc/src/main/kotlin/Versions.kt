@@ -8,7 +8,7 @@ object Versions {
   const val versionCode = 5
   const val versionName = "1.0.4"
 
-  const val material = "1.4.0"
+  const val material = "1.6.0"
   const val navigation = "2.4.0"
   const val lifecycleKtxViewModel = "2.4.0"
   const val lifecycleKtxLiveData = "2.4.0"
