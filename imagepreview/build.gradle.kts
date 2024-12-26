@@ -2,6 +2,10 @@ plugins {
   id("android-feature")
 }
 
+android {
+  namespace = "org.auspiciousrhino.quicksetup.imagepreview"
+}
+
 dependencies {
-  implementation("com.github.chrisbanes.photoview:library:${Versions.photoView}")
+  implementation(libs.photoView)
 }

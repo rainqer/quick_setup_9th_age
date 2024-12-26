@@ -1,0 +1,42 @@
+[versions]
+navigation = "2.8.5"
+kotlin-gradle-plugin = "1.6.0"
+gradle = "8.7.3"
+gradle-plugin = "1.6.0"
+kotlin = "1.9.24"
+material = "1.6.0"
+koin = "3.1.4"
+gson = "2.8.6"
+photoView = "1.2.4"
+junit = "4.13"
+lifecycleKtxViewModel = "2.4.0"
+lifecycleKtxLiveData = "2.4.0"
+ktxActivities = "1.4.0"
+constraintlayout = "2.1.2"
+recyclerview = "1.2.1"
+
+[libraries]
+android-navigation-safeArgs = { group = "androidx.navigation", name = "navigation-safe-args-gradle-plugin", version.ref = "navigation" }
+android-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+android-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+
+kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
+gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "gradle" }
+gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "gradle-plugin" }
+
+kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlin-jdk8 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version.ref = "kotlin" }
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+photoView = { group = "com.github.chrisbanes.photoview", name = "library", version.ref = "photoView" }
+test-junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleKtxViewModel" }
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleKtxLiveData" }
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "ktxActivities" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+
+[plugins]

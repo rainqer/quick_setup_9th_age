@@ -9,8 +9,9 @@ plugins {
 }
 
 dependencies {
-  implementation("com.android.tools.build:gradle:7.4.2")
-  implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0")
-  implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0")
-  implementation("androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1")
+  implementation(libs.gradle)
+  implementation(libs.gradle.plugin)
+  implementation(libs.kotlin.jdk8)
+  implementation(libs.android.navigation.safeArgs)
+  implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
 }

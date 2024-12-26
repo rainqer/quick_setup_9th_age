@@ -2,6 +2,10 @@ plugins {
   id("android-feature")
 }
 
+android {
+  namespace = "org.auspiciousrhino.quicksetup.hostscreen"
+}
+
 dependencies {
   implementation(project(Modules.armyListPreview))
   implementation(project(Modules.battleoutcome))
@@ -12,7 +16,7 @@ dependencies {
   implementation(project(Modules.summary))
   implementation(project(Modules.ui))
 
-  implementation("com.google.android.material:material:${Versions.material}")
-  implementation("androidx.navigation:navigation-fragment-ktx:${Versions.navigation}")
-  implementation("androidx.navigation:navigation-ui-ktx:${Versions.navigation}")
+  implementation(libs.material)
+  implementation(libs.android.navigation.fragment)
+  implementation(libs.android.navigation.ui)
 }

@@ -36,7 +36,7 @@
         android:text="@string/preview_list"
         />
 
-      <org.auspiciousrhino.ui.ArmyListEntryView
+      <org.auspiciousrhino.quicksetup.ui.ArmyListEntryView
         android:id="@+id/testListEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

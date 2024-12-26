@@ -2,9 +2,13 @@ plugins {
   id("android-lib")
 }
 
+android {
+  namespace = "org.auspiciousrhino.quicksetup.domain"
+}
+
 dependencies {
   implementation(project(Modules.drawables))
   implementation(project(Modules.strings))
 
-  implementation("com.google.code.gson:gson:${Versions.gson}")
+  implementation(libs.gson)
 }

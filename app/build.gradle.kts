@@ -5,18 +5,17 @@ plugins {
 
 android {
   compileSdk = Versions.compileSdkVersion
-  buildToolsVersion = Versions.buildTools
+  namespace = "org.auspiciousrhino.quicksetup.app"
 
   defaultConfig {
-    minSdkVersion(Versions.minSdkVersion)
-    targetSdkVersion(Versions.targetSdkVersion)
+    minSdk = Versions.minSdkVersion
     versionCode = Versions.versionCode
     versionName = Versions.versionName
   }
 
   compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
   }
 
   buildTypes {
@@ -30,9 +29,8 @@ android {
       isDebuggable = false
     }
   }
-
-  kotlinOptions {
-    jvmTarget = "1.8"
+  kotlin {
+    jvmToolchain(21)
   }
 }
 
@@ -52,10 +50,10 @@ dependencies {
   implementation(project(Modules.summary))
   implementation(project(Modules.ui))
 
-  implementation("org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}")
-  implementation("org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}")
-  implementation("com.google.android.material:material:${Versions.material}")
+  implementation(libs.kotlin)
+  implementation(libs.kotlin.reflect)
+  implementation(libs.material)
 
-  implementation("io.insert-koin:koin-android:${Versions.koin}")
-  implementation("androidx.navigation:navigation-ui-ktx:${Versions.navigation}")
+  implementation(libs.koin)
+  implementation(libs.android.navigation.ui)
 }

@@ -8,7 +8,7 @@
 
   <fragment
     android:id="@+id/summaryFragment"
-    android:name="org.auspiciousrhino.summary.SummaryFragment"
+    android:name="org.auspiciousrhino.quicksetup.summary.SummaryFragment"
     android:label="SummaryFragment"
     />
 

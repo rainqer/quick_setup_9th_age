@@ -8,7 +8,7 @@
 
   <fragment
     android:id="@+id/listImportFragment"
-    android:name="org.auspiciousrhino.listimport.ListImportFragment"
+    android:name="org.auspiciousrhino.quicksetup.listimport.ListImportFragment"
     android:label="ListImportFragment"
     >
     <action
@@ -22,7 +22,7 @@
 
   <fragment
     android:id="@+id/battleOutcomeFragment"
-    android:name="org.auspiciousrhino.battleoutcome.BattleOutcomeFragment"
+    android:name="org.auspiciousrhino.quicksetup.battleoutcome.BattleOutcomeFragment"
     android:label="BattleOutcome"
     >
     <action
@@ -33,7 +33,7 @@
 
   <fragment
     android:id="@+id/armyListPreviewFragment"
-    android:name="org.auspiciousrhino.armylistpreview.ArmyListPreviewFragment"
+    android:name="org.auspiciousrhino.quicksetup.armylistpreview.ArmyListPreviewFragment"
     android:label="SummaryFragment"
     >
     <action

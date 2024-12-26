@@ -2,7 +2,11 @@ plugins {
   id("android-lib")
 }
 
+android {
+  namespace = "org.auspiciousrhino.quicksetup.storage"
+}
+
 dependencies {
   implementation(project(Modules.domain))
-  implementation("com.google.code.gson:gson:${Versions.gson}")
+  implementation(libs.gson)
 }

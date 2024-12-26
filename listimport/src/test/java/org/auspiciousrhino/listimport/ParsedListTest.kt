@@ -1,5 +1,6 @@
 package org.auspiciousrhino.listimport
 
+import org.auspiciousrhino.quicksetup.listimport.ParsedList
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

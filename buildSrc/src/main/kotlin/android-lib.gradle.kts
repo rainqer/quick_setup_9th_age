@@ -1,12 +1,14 @@
+import org.gradle.accessors.dm.LibrariesForLibs
+
 plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-parcelize")
 }
+val libs = the<LibrariesForLibs>()
 
 android {
     compileSdk = Versions.compileSdkVersion
-    buildToolsVersion = Versions.buildTools
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -16,6 +18,6 @@ android {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}")
-    implementation("io.insert-koin:koin-android:${Versions.koin}")
+    implementation(libs.kotlin.jdk8)
+    implementation(libs.koin)
 }
