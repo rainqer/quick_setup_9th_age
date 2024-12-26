@@ -3,7 +3,7 @@
 
   <declare-styleable name="DefaultStylesTheme">
     <attr name="deploymentViewStyle" format="reference" />
-    <attr name="secondaryObjectiveViewStyle" format="reference" />
+    <attr name="objectiveViewStyle" format="reference" />
     <attr name="button" format="reference" />
   </declare-styleable>
 
@@ -11,7 +11,7 @@
     <attr name="deploymentview_verbose" format="boolean"/>
   </declare-styleable>
 
-  <declare-styleable name="SecondaryObjectiveView">
-    <attr name="secondaryobjectiveview_verbose" format="boolean"/>
+  <declare-styleable name="objectiveView">
+    <attr name="objectiveview_verbose" format="boolean"/>
   </declare-styleable>
 </resources>

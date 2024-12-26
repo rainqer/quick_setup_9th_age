@@ -51,7 +51,7 @@ class SummaryFragment : Fragment() {
     model.state.observe(viewLifecycleOwner) { summaryState ->
       binding.terrainLayout.viewEntity = summaryState.configuration.map
       binding.deployment.viewEntity = summaryState.configuration.deployment
-      binding.secondaryObjective.viewEntity = summaryState.configuration.secondaryObjective
+      binding.primaryObjective.viewEntity = summaryState.configuration.primaryObjective
     }
     model.navigationEvents.observe(viewLifecycleOwner) { navigationEvent ->
       navigation.consume(navigationEvent, view)
@@ -67,11 +67,11 @@ class SummaryFragment : Fragment() {
     binding.deploymentDetailsButton.setOnClickListener {
       binding.deployment.verbose = !binding.deployment.verbose
     }
-    binding.secondaryObjectiveCard.setOnClickListener {
-      binding.secondaryObjective.verbose = !binding.secondaryObjective.verbose
+    binding.primaryObjectiveCard.setOnClickListener {
+      binding.primaryObjective.verbose = !binding.primaryObjective.verbose
     }
-    binding.secondaryObjectiveDetailsButton.setOnClickListener {
-      binding.secondaryObjective.verbose = !binding.secondaryObjective.verbose
+    binding.primaryObjectiveDetailsButton.setOnClickListener {
+      binding.primaryObjective.verbose = !binding.primaryObjective.verbose
     }
     binding.generateNewConfigurationButton.setOnClickListener {
       model.generateNewConfiguration()
@@ -81,7 +81,7 @@ class SummaryFragment : Fragment() {
   private fun enableAnimations() {
     binding.summaryRoot.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
     binding.deploymentCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
-    binding.secondaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.primaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
   }
 
   companion object {

@@ -14,7 +14,7 @@
     <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
 
     <item name="deploymentViewStyle">@style/Component_DeploymentView_Verbose</item>
-    <item name="secondaryObjectiveViewStyle">@style/Component_SecondaryObjectiveView_Verbose</item>
+    <item name="objectiveViewStyle">@style/Component_SecondaryObjectiveView_Verbose</item>
     <item name="android:button">@style/Typography.Component.Button</item>
 
   </style>
@@ -24,6 +24,6 @@
   </style>
 
   <style name="Component_SecondaryObjectiveView_Verbose">
-    <item name="secondaryobjectiveview_verbose">true</item>
+    <item name="objectiveview_verbose">true</item>
   </style>
 </resources>

@@ -9,26 +9,26 @@
   tools:parentTag="android.widget.LinearLayout">
 
   <TextView
-    android:id="@+id/secondaryObjectiveTitle"
+    android:id="@+id/objectiveTitle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textAppearance="@style/Typography.Component.Title"
-    tools:text="Secondary Objective title" />
+    tools:text="Objective title" />
 
   <TextView
-    android:id="@+id/secondaryObjectiveDescriptionShort"
+    android:id="@+id/objectiveDescriptionShort"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/margin_vertical_small"
     android:textAppearance="@style/Typography.Component.Paragraph.Italic"
-    tools:text="@string/secondaryobjective_01_description_short" />
+    tools:text="@string/primaryobjective_01_description_short" />
 
   <TextView
-    android:id="@+id/secondaryObjectiveDescription"
+    android:id="@+id/objectiveDescription"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/margin_vertical_small"
     android:textAppearance="@style/Typography.Component.Paragraph"
-    tools:text="@string/secondaryobjective_01_description" />
+    tools:text="@string/primaryobjective_01_description" />
 
 </merge>

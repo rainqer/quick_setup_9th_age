@@ -8,7 +8,7 @@ class ConfigurationRepository {
 
   var configuration: Configuration = Configuration(
     map = TERRAIN_LAYOUT_01,
-    secondaryObjective = SECONDARY_OBJECTIVE_1,
+    primaryObjective = SECONDARY_OBJECTIVE_1,
     deployment = DEPLOYMENT_06
   )
 }

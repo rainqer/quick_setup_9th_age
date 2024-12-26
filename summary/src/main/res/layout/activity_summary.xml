@@ -93,7 +93,7 @@
     </LinearLayout>
 
     <LinearLayout
-      android:id="@+id/secondaryObjectiveCard"
+      android:id="@+id/primaryObjectiveCard"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="@dimen/margin_vertical_medium"
@@ -105,18 +105,18 @@
       <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/secondaryobjective"
+        android:text="@string/primaryobjective"
         android:textAppearance="@style/Typography.Component.Subtitle" />
 
-      <org.auspiciousrhino.quicksetup.ui.SecondaryObjectiveView
-        android:id="@+id/secondaryObjective"
+      <org.auspiciousrhino.quicksetup.ui.ObjectiveView
+        android:id="@+id/primaryObjective"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
-        app:secondaryobjectiveview_verbose="false" />
+        app:objectiveview_verbose="false" />
 
       <Button
-        android:id="@+id/secondaryObjectiveDetailsButton"
+        android:id="@+id/primaryObjectiveDetailsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical_medium"
