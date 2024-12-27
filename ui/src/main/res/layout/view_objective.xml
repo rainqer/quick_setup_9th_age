@@ -20,7 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/margin_vertical_small"
-    android:textAppearance="@style/Typography.Component.Paragraph.Italic"
+    android:textAppearance="@style/Typography.Component.Paragraph"
     tools:text="@string/primaryobjective_01_description_short" />
 
   <TextView

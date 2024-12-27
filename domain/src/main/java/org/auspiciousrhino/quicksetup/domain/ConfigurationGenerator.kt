@@ -11,6 +11,7 @@ class ConfigurationGenerator {
     TERRAIN_LAYOUTS.random(),
     DEPLOYMENTS.random(),
     PRIMARY_OBJECTIVES.random(),
-    mySecondaryObjectives = ARMY_OBJECTIVES_ORDERED.random()
+    mySecondaryObjectives = ARMY_OBJECTIVES_ORDERED.random(),
+    opponentSecondaryObjectives = ARMY_OBJECTIVES_ORDERED.random()
   )
 }

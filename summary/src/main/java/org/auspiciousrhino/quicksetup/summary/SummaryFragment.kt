@@ -52,6 +52,7 @@ class SummaryFragment : Fragment() {
       binding.deployment.viewEntity = summaryState.configuration.deployment
       binding.primaryObjective.viewEntity = summaryState.configuration.primaryObjective
       binding.mySecondaryObjective.viewEntity = summaryState.configuration.mySecondaryObjectives
+      binding.opponentSecondaryObjective.viewEntity = summaryState.configuration.opponentSecondaryObjectives
     }
     model.navigationEvents.observe(viewLifecycleOwner) { navigationEvent ->
       navigation.consume(navigationEvent, view)
@@ -76,11 +77,19 @@ class SummaryFragment : Fragment() {
     binding.generateNewConfigurationButton.setOnClickListener {
       model.generateNewConfiguration()
     }
+    binding.mySecondaryObjective.verbose = true
     binding.mySecondaryObjectiveDetailsButton.setOnClickListener {
       binding.mySecondaryObjective.verbose = !binding.mySecondaryObjective.verbose
     }
     binding.mySecondaryObjectiveCard.setOnClickListener {
       binding.mySecondaryObjective.verbose = !binding.mySecondaryObjective.verbose
+    }
+    binding.opponentSecondaryObjective.verbose = true
+    binding.opponentSecondaryObjectiveDetailsButton.setOnClickListener {
+      binding.opponentSecondaryObjective.verbose = !binding.opponentSecondaryObjective.verbose
+    }
+    binding.opponentSecondaryObjectiveCard.setOnClickListener {
+      binding.opponentSecondaryObjective.verbose = !binding.opponentSecondaryObjective.verbose
     }
   }
 
@@ -88,5 +97,7 @@ class SummaryFragment : Fragment() {
     binding.summaryRoot.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
     binding.deploymentCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
     binding.primaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.mySecondaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.opponentSecondaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
   }
 }

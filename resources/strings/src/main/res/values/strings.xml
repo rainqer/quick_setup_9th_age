@@ -66,6 +66,7 @@ chapter) is lost.
     \n\nAt the end of the game, the player controlling the most markers wins this Secondary Objective. A marker is controlled by the player with the most Scoring Units within 6″ of the centre of the marker. If a unit is within 6″ of the centres of both markers, it only counts as within 6″ of the centre of the marker which is closest to its Centre (randomise if both markers’ centres are equally close).</string>
 
   <string name="mysecondaryobjective">My Secondary Objective</string>
+  <string name="opponentsecondaryobjective">Opponents Secondary Objective</string>
 
   <string name="secondaryobjective_01">Capture the Flag</string>
   <string name="secondaryobjective_01_description_short">Setup during Pre-game Selections: None.</string>

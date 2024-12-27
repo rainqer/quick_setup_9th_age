@@ -10,6 +10,7 @@ class ConfigurationRepository {
     map = TERRAIN_LAYOUT_01,
     primaryObjective = SECONDARY_OBJECTIVE_1,
     deployment = DEPLOYMENT_06,
-    mySecondaryObjectives = emptyMap()
+    mySecondaryObjectives = emptyMap(),
+    opponentSecondaryObjectives = emptyMap(),
   )
 }

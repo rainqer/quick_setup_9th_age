@@ -152,6 +152,40 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical_medium"
         android:text="@string/details"
+        android:visibility="gone"
+        style="@style/Typography.Component.Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/opponentSecondaryObjectiveCard"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:layout_marginBottom="@dimen/margin_vertical_xxl"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:animateLayoutChanges="true"
+      android:padding="@dimen/screen_padding">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opponentsecondaryobjective"
+        android:textAppearance="@style/Typography.Component.Subtitle" />
+
+      <org.auspiciousrhino.quicksetup.ui.NestedObjectiveView
+        android:id="@+id/opponentSecondaryObjective"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+      <Button
+        android:id="@+id/opponentSecondaryObjectiveDetailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_medium"
+        android:text="@string/details"
+        android:visibility="gone"
         style="@style/Typography.Component.Button"/>
 
     </LinearLayout>
