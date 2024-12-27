@@ -129,22 +129,12 @@ chapter) is lost.
 \n\nWinning conditions: At the end of the game, you win this Secondary Objective if you have at least two Scoring Units within 9″ of the centre of table, and the opponent does not have two or more.</string>
 
   <string name="terrainlayout">Terrain Layout</string>
-  <string name="terrainlayout_01">Shrouded Pool</string>
-  <string name="terrainlayout_02">Foothill Outpost</string>
-  <string name="terrainlayout_03">Dilapidated Manor</string>
-  <string name="terrainlayout_04">Volcanic Lake</string>
-  <string name="terrainlayout_05">Misty Marshes</string>
-  <string name="terrainlayout_06">Ancient Walls</string>
-  <string name="terrainlayout_07">Beacon Hill</string>
-  <string name="terrainlayout_08">Witch\'s Cottage</string>
-  <string name="terrainlayout_09">Mage\'s Sanctum</string>
-  <string name="terrainlayout_10">Villa Grounds</string>
-  <string name="terrainlayout_11">Ancient Fortress</string>
-  <string name="terrainlayout_12">Frontier Farm</string>
-  <string name="terrainlayout_13">Ravaged Watchtower</string>
-  <string name="terrainlayout_14">Creeping Forest</string>
-  <string name="terrainlayout_15">Eerie Graveyard</string>
-  <string name="terrainlayout_16">Shattered Bridge</string>
+  <string name="terrainlayout_01">Clearwater Springs</string>
+  <string name="terrainlayout_02">Ancient Fortifications</string>
+  <string name="terrainlayout_03">Ancient Fortifications</string>
+  <string name="terrainlayout_04">Abandoned Settlement</string>
+  <string name="terrainlayout_05">Historic Battlefield</string>
+  <string name="terrainlayout_06">Mountainous Crags</string>
   <string name="terrainlayout_preview">Terrain Layout Preview</string>
 
   <string name="listimport_import_from_clipboard">Load list from clipboard</string>
