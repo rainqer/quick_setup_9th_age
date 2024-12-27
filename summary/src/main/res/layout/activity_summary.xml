@@ -125,6 +125,37 @@
 
     </LinearLayout>
 
+    <LinearLayout
+      android:id="@+id/mySecondaryObjectiveCard"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:animateLayoutChanges="true"
+      android:padding="@dimen/screen_padding">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mysecondaryobjective"
+        android:textAppearance="@style/Typography.Component.Subtitle" />
+
+      <org.auspiciousrhino.quicksetup.ui.NestedObjectiveView
+        android:id="@+id/mySecondaryObjective"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+      <Button
+        android:id="@+id/mySecondaryObjectiveDetailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_medium"
+        android:text="@string/details"
+        style="@style/Typography.Component.Button"/>
+
+    </LinearLayout>
+
   </LinearLayout>
 
 </ScrollView>

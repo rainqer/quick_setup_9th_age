@@ -14,6 +14,7 @@ lifecycleKtxLiveData = "2.4.0"
 ktxActivities = "1.4.0"
 constraintlayout = "2.1.2"
 recyclerview = "1.2.1"
+viewpager2 = "1.1.0"
 
 [libraries]
 android-navigation-safeArgs = { group = "androidx.navigation", name = "navigation-safe-args-gradle-plugin", version.ref = "navigation" }

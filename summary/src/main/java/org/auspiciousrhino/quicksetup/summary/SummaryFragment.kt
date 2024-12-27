@@ -10,7 +10,6 @@ import org.auspiciousrhino.quicksetup.navigation.Navigation
 import org.auspiciousrhino.quicksetup.summary.databinding.ActivitySummaryBinding
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import java.lang.IllegalStateException
 
 class SummaryFragment : Fragment() {
 
@@ -52,6 +51,7 @@ class SummaryFragment : Fragment() {
       binding.terrainLayout.viewEntity = summaryState.configuration.map
       binding.deployment.viewEntity = summaryState.configuration.deployment
       binding.primaryObjective.viewEntity = summaryState.configuration.primaryObjective
+      binding.mySecondaryObjective.viewEntity = summaryState.configuration.mySecondaryObjectives
     }
     model.navigationEvents.observe(viewLifecycleOwner) { navigationEvent ->
       navigation.consume(navigationEvent, view)
@@ -76,16 +76,17 @@ class SummaryFragment : Fragment() {
     binding.generateNewConfigurationButton.setOnClickListener {
       model.generateNewConfiguration()
     }
+    binding.mySecondaryObjectiveDetailsButton.setOnClickListener {
+      binding.mySecondaryObjective.verbose = !binding.mySecondaryObjective.verbose
+    }
+    binding.mySecondaryObjectiveCard.setOnClickListener {
+      binding.mySecondaryObjective.verbose = !binding.mySecondaryObjective.verbose
+    }
   }
 
   private fun enableAnimations() {
     binding.summaryRoot.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
     binding.deploymentCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
     binding.primaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
-  }
-
-  companion object {
-
-    fun new() = SummaryFragment()
   }
 }

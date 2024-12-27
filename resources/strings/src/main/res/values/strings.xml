@@ -81,6 +81,15 @@ At the end of each Game Turn after the first, a Victory Counter is awarded to th
   <string name="primaryobjective_06_description_legacy">Immediately after determining Deployment Zones, both players place one marker on the Battlefield, starting with the player who chose their Deployment Zone. Each player must place the marker with its centre on a point that is more than 12″ away from their Deployment Zone and at least a third of the long Board Edge length (24″ on a standard board) from the point marked by the other marker.
     \n\nAt the end of the game, the player controlling the most markers wins this Secondary Objective. A marker is controlled by the player with the most Scoring Units within 6″ of the centre of the marker. If a unit is within 6″ of the centres of both markers, it only counts as within 6″ of the centre of the marker which is closest to its Centre (randomise if both markers’ centres are equally close).</string>
 
+  <string name="mysecondaryobjective">My Secondary Objective</string>
+
+  <string name="secondaryobjective_01">Secondary objective 1</string>
+  <string name="secondaryobjective_01_description_short">Secondary objective description short</string>
+  <string name="secondaryobjective_01_description">Secondary objective description long</string>
+
+  <string name="secondaryobjective_02">Secondary objective 1</string>
+  <string name="secondaryobjective_02_description_short">Secondary objective description short</string>
+  <string name="secondaryobjective_02_description">Secondary objective description long</string>
 
   <string name="terrainlayout">Terrain Layout</string>
   <string name="terrainlayout_01">Shrouded Pool</string>

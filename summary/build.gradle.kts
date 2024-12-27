@@ -9,4 +9,5 @@ android {
 dependencies {
   implementation(project(Modules.domain))
   implementation(project(Modules.ui))
+  implementation(libs.material)
 }
