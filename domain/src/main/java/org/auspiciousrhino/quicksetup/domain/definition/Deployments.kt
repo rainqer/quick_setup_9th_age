@@ -11,27 +11,27 @@ internal val DEPLOYMENT_01 = Deployment(
 )
 internal val DEPLOYMENT_02 = Deployment(
   name = Rstrings.string.deployment_02,
-  image = Rdrawable.drawable.deployment_02_dawn_assault,
+  image = Rdrawable.drawable.deployment_02_bottleneck,
   description = Rstrings.string.deployment_02_description
 )
 internal val DEPLOYMENT_03 = Deployment(
   name = Rstrings.string.deployment_03,
-  image = Rdrawable.drawable.deployment_03_counterthrust,
+  image = Rdrawable.drawable.deployment_03_spearhead,
   description = Rstrings.string.deployment_03_description
 )
 internal val DEPLOYMENT_04 = Deployment(
   name = Rstrings.string.deployment_04,
-  image = Rdrawable.drawable.deployment_04_encircle,
+  image = Rdrawable.drawable.deployment_04_mutualencroachment,
   description = Rstrings.string.deployment_04_description
 )
 internal val DEPLOYMENT_05 = Deployment(
   name = Rstrings.string.deployment_05,
-  image = Rdrawable.drawable.deployment_05_refused_flank,
+  image = Rdrawable.drawable.deployment_05_refusedflank,
   description = Rstrings.string.deployment_05_description
 )
 internal val DEPLOYMENT_06 = Deployment(
   name = Rstrings.string.deployment_06,
-  image = Rdrawable.drawable.deployment_06_surging_tide,
+  image = Rdrawable.drawable.deployment_06_cornerstone,
   description = Rstrings.string.deployment_06_description
 )
 

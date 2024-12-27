@@ -8,7 +8,10 @@ plugins {
 val libs = the<LibrariesForLibs>()
 
 android {
-    compileSdk = Versions.compileSdkVersion
+    defaultConfig {
+        minSdk = Versions.minSdkVersion
+        compileSdk = Versions.compileSdkVersion
+    }
     kotlinOptions {
         jvmTarget = "1.8"
     }

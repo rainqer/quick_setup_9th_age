@@ -14,28 +14,17 @@
   <string name="conflict_side_me">This is my army</string>
   <string name="conflict_side_opponent">This is my opponent\'s army</string>
   <string name="deployment_01">Frontline Clash</string>
-  <string name="deployment_01_description">Deployment Zones are areas more than 12″ away from the Centre Line</string>
-  <string name="deployment_02">Dawn Assault</string>
-  <string name="deployment_02_description">The player choosing the Deployment Zone also chooses a short Board Edge and the other player gets the opposite short Board Edge. Deployment Zones are areas more than 12″ away from the Centre Line and more than &#188; of the board’s length from the opponent’s short Board Edge (18″ on a 72″ board). When declaring Special Deployment, players may choose to keep up to two of their units as reinforcement. These units follow the rules for Ambushing units, except that they must be placed touching the owner’s short Board Edge when they arrive.</string>
-  <string name="deployment_03">Counterthrust</string>
-  <string name="deployment_03_description">Deployment Zones are areas more than 8″ away from the Centre Line. Units must be deployed more than 20″ away from enemy units. During their first 3 deployment turns, each player must deploy a single unit if possible, and cannot deploy any Characters unless they have to. Units using Special Deployment, such as Scout, ignore these restrictions and follow their Special Deployment rules.</string>
-  <string name="deployment_04">Encircle</string>
-  <string name="deployment_04_description">The player choosing the Deployment Zone decides if they want to be the attacker or the defender. The attacker must deploy more than 9″ from the Centre Line if entirely within a quarter of the board’s length from either short Board Edge (18″ on a 72″ board), and more than 15″from the Centre Line elsewhere. The defender does the opposite: more than 15″ away from the Centre Line if within a quarter of the board’s length from the short Board Edge, and more than 9″ away from the Centre Line elsewhere.</string>
+  <string name="deployment_01_description">Deployment Zones are more than 12″ away from the Central Line, towards your Long Table Edge, and more than 6″ from the Short Table Edges.</string>
+  <string name="deployment_02">Bottleneck</string>
+  <string name="deployment_02_description">Player A’s Deployment Zone is more than 9″ away from the Central Line, towards your Long Table Edge, and more than 12″ from the Short Table Edges. Player B’s Deployment Zone is more than 15″ away from the Central Line. Whoever chooses its Deployment Zone also chooses if they are player A or player B.</string>
+  <string name="deployment_03">Spearhead</string>
+  <string name="deployment_03_description">Deployment Zones are more than 15″ away from the Central Line. The table is divided along the long Table Edge into 3 equal areas (west, centre, east). The player who chooses its Deployment Zone also chooses one of these thirds to be their Spearhead Area. The other player then chooses one of the remaining two thirds as their Spearhead Area. Units deployed fully within their Spearhead Area gain Vanguard (3″).</string>
+  <string name="deployment_04"> Mutual Encroachment</string>
+  <string name="deployment_04_description">Deployment Zones are more than 12″ away from the Central Line, towards your Long Table Edge, and more than 6″ from the Short Table Edges. When deploying, each player may Deploy up to two of their Core Scoring Units fully on their own half of the Battlefield and fully within any Field, Forest, or Ruins (i.e. no parts of the Unit Boundary outside the Terrain Feature or on the opponent’s half of the Battlefield). Units Deployed in this way cannot declare a Charge, perform Advance Move, or perform a March Move in the first Player Turn of the first Game Turn.</string>
   <string name="deployment_05">Refused Flank</string>
-  <string name="deployment_05_description">The board is divided into halves by a diagonal line across the board. Whoever gets to choose the Deployment Zone decides which diagonal to use. Deployment Zones are areas more than 9″ away from this line.</string>
-  <string name="deployment_06">Surging Tide</string>
-  <string name="deployment_06_legacy">Marching Columns</string>
-  <string name="deployment_06_description">Deployment Zones are areas more than 12′′ away from the Centre Line and 6” from the short table edges.
-On each player’s first deployment turn, the player must choose to either:
-1. Deploy their whole army, following the normal Deployment Rules, or
-2. Deploy only a single unit. If both players used this option, then in all remaining deployment turns players must deploy units one at a time. In this case, the player that finished deploying first gains (only) a +1 modifier on the roll for first turn</string>
-  <string name="deployment_06_description_legacy">Deployment Zones are areas more than 12″ away from the Centre Line.\n\nEach player must choose a short Board Edge when deploying their first unit. Each unit this player deploys
-afterwards must be deployed with its Centre farther away from the chosen short Board Edge than the Centre of the last unit this player deployed (measure from the closest point on the short Board Edge). Characters, War Machines, War Platforms, and Scouting units
-ignore these rules.\n\nDuring their first 3 deployment turns, each player must deploy a single unit if possible, and cannot deploy any Characters, War Machines, or War Platforms unless they have to.\n\nInstead of deploying a unit, a player may choose to make all
-their undeployed units Delayed that are not using Special Deployment. Delayed units follow the rules for Ambushing units with the following exceptions:\n\n
-• In each Player Turn, after rolling for all Ambushing units, the Reactive Player chooses the order in which all Delayed units that passed the 3+ roll enter the Battlefield.\n\n
-• In the chosen order, each unit must be placed one after the other with the centre of its rear rank as close as possible to the centre of the long Board Edge in their owner’s Deployment Zone, before any nonDelayed Ambushers are placed on the Battlefield.\n\n
-• After all arriving units have been placed, they can be moved as described in the rules for Ambush (see page 80).</string>
+  <string name="deployment_05_description">Deployment Zones are more than 9″ away from the Central Line (see figure). The Central Line is the line drawn from one corner to the opposite corner. The player that chooses its Deployment Zone also chooses which corners to use for the Central Line</string>
+  <string name="deployment_06">Cornerstone</string>
+  <string name="deployment_06_description">Deployment Zones are more than 12″ away from the Central Line, towards your Long Table Edge, and more than 6″ from the Short Table Edges. The first unit each player deploys must be their most expensive Rank-and-File unit (on the Army List). This unit must be deployed within 6″ of the Central Line that is parallel to the Short Table Edges (dashed red line in the figure). When deployment is finished, each player must have deployed an as equal number of units as possible on each side of the first deployed unit. Which side a unit is deployed on is defined by which short table edge the unit’s centre is closer to (compared to the first deployed unit). Ignore Attachable Models that start the game joined to a unit for this.</string>
   <string name="deployment_preview">Deployment Preview</string>
 
   <string name="primaryobjective">Primary Objective</string>

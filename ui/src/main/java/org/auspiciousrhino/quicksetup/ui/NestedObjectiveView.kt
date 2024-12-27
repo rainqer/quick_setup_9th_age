@@ -2,7 +2,6 @@ package org.auspiciousrhino.quicksetup.ui
 
 import android.content.Context
 import android.util.AttributeSet
-import android.widget.Button
 import android.widget.LinearLayout
 import com.google.android.material.tabs.TabLayout
 import org.auspiciousrhino.quicksetup.domain.Objective
