@@ -78,19 +78,7 @@ class SummaryFragment : Fragment() {
       model.generateNewConfiguration()
     }
     binding.mySecondaryObjective.verbose = true
-    binding.mySecondaryObjectiveDetailsButton.setOnClickListener {
-      binding.mySecondaryObjective.verbose = !binding.mySecondaryObjective.verbose
-    }
-    binding.mySecondaryObjectiveCard.setOnClickListener {
-      binding.mySecondaryObjective.verbose = !binding.mySecondaryObjective.verbose
-    }
     binding.opponentSecondaryObjective.verbose = true
-    binding.opponentSecondaryObjectiveDetailsButton.setOnClickListener {
-      binding.opponentSecondaryObjective.verbose = !binding.opponentSecondaryObjective.verbose
-    }
-    binding.opponentSecondaryObjectiveCard.setOnClickListener {
-      binding.opponentSecondaryObjective.verbose = !binding.opponentSecondaryObjective.verbose
-    }
   }
 
   private fun enableAnimations() {

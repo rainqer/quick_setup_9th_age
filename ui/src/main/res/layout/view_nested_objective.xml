@@ -13,6 +13,9 @@
     android:id="@+id/mySecondaryObjectiveForArmyTabs"
     app:tabMode="scrollable"
     android:layout_width="match_parent"
+    android:background="@color/white"
+    app:tabTextAppearance="@style/Typography.Component.Title"
+    app:tabTextColor="@color/black"
     android:layout_height="wrap_content"/>
 
   <org.auspiciousrhino.quicksetup.ui.ObjectiveView
