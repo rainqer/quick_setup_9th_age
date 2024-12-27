@@ -16,6 +16,7 @@
     android:layout_height="wrap_content"/>
 
   <org.auspiciousrhino.quicksetup.ui.ObjectiveView
+    android:paddingTop="20dp"
     android:id="@+id/mySecondaryObjectiveNestedView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

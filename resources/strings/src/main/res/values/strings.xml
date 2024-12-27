@@ -67,13 +67,65 @@ chapter) is lost.
 
   <string name="mysecondaryobjective">My Secondary Objective</string>
 
-  <string name="secondaryobjective_01">Secondary objective 1</string>
-  <string name="secondaryobjective_01_description_short">Secondary objective description short</string>
-  <string name="secondaryobjective_01_description">Secondary objective description long</string>
+  <string name="secondaryobjective_01">Capture the Flag</string>
+  <string name="secondaryobjective_01_description_short">Setup during Pre-game Selections: None.</string>
+  <string name="secondaryobjective_01_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if you have more Standard Bearers and Battle Standard Bearers on the Battlefield, than the opponent has.</string>
 
-  <string name="secondaryobjective_02">Secondary objective 1</string>
-  <string name="secondaryobjective_02_description_short">Secondary objective description short</string>
-  <string name="secondaryobjective_02_description">Secondary objective description long</string>
+  <string name="secondaryobjective_02">Commit to Battle</string>
+  <string name="secondaryobjective_02_description_short">Setup during Pre-game Selections: None.</string>
+  <string name="secondaryobjective_02_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if you have more Scoring Units in your opponent’s Deployment Zone than the opponent has (in their own Deployment Zone).</string>
+
+  <string name="secondaryobjective_03">Demonstrate Superiority</string>
+  <string name="secondaryobjective_03_description_short">Setup during Pre-game Selections: The opponent nominates the two most expensive Scoring Units from their Army List. In case of a tie, randomize. If there are no Scoring Units, nominate the most expensive Rank-and-File unit instead.</string>
+  <string name="secondaryobjective_03_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if at least one of the nominated units Destroyed, Decimated, Shaken, or if it is touching its own Deployment Zone.</string>
+
+  <string name="secondaryobjective_04">Enslave and Ransom</string>
+  <string name="secondaryobjective_04_description_short">Setup during Pre-game Selections: None.</string>
+  <string name="secondaryobjective_04_description">Rules: An enemy unit is enslaved whenever it is destroyed during a Round of Combat in step 5 of the Round of Combat sequence (Breaking and Pursuing). This includes failing a Break Test and being caught or dying during the Flee Move, Supernal unit failing a Break Test or Unstable unit losing a Combat and being wiped due to HP loss. This does not include units being destroyed as a direct result of Melee Attacks. Ignore Attachable Models joined to units with Rank-and-File models.
+\n\nWinning conditions: You win this Secondary Objective if at least two enemy units have been enslaved during the course of the game.</string>
+
+  <string name="secondaryobjective_05">Forbid Trespass</string>
+  <string name="secondaryobjective_05_description_short">Setup during Pre-game Selections: You nominate a Terrain Feature on the Battlefield that is fully outside your Deployment Zone. Impassable Terrain and Walls cannot be nominated.</string>
+  <string name="secondaryobjective_05_description">Rules: A nominated Terrain Feature is plundered when an enemy Scoring Unit starts any of its Player Turn 3–6 in contact with it.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if the nominated Terrain Feature was not plundered.</string>
+
+  <string name="secondaryobjective_06">Master the Veil</string>
+  <string name="secondaryobjective_06_description_short">Setup during Pre-game Selections: Mark the centre of the table.</string>
+  <string name="secondaryobjective_06_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if you have a model with Channel, or that knows a spell (Learned Spell or Bound Spell), within 9″ of the centre of table, and the opponent has not.</string>
+
+  <string name="secondaryobjective_07">Seize and Secure</string>
+  <string name="secondaryobjective_07_description_short">Setup during Pre-game Selections: The opponent nominates a Terrain Feature on the Battlefield that is fully outside their Deployment Zone. Impassable Terrain and Walls cannot be nominated.</string>
+  <string name="secondaryobjective_07_description">Rules: A nominated Terrain Feature is plundered when a friendly Scoring Unit starts any of its Player Turn 3–6 in contact with it.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if the nominated Terrain Feature was plundered.</string>
+
+  <string name="secondaryobjective_08">Settle the Score</string>
+  <string name="secondaryobjective_08_description_short">Setup during Pre-game Selections: You nominate a unit from the opponent’s Army List.</string>
+  <string name="secondaryobjective_08_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective, if the nominated unit Destroyed, Decimated, or Shaken.</string>
+
+  <string name="secondaryobjective_09">Slay the Beast</string>
+  <string name="secondaryobjective_09_description_short">Setup during Pre-game Selections: The opponent nominates the two most expensive non-Scoring Units from their Army List. In case of a tie, randomize. If there are not enough non-Scoring Units, nominate the most expensive Scoring Units instead.</string>
+  <string name="secondaryobjective_09_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective, if at least one of the nominated units is has been Destroyed, Decimated, Shaken, or if it is touching its own Deployment Zone.</string>
+
+  <string name="secondaryobjective_10">Stand Firm</string>
+  <string name="secondaryobjective_10_description_short">Setup during Pre-game Selections: The opponent nominates two Scoring units from your Army List. If there are no Scoring Units, instead they nominate Rank-and-File units.</string>
+  <string name="secondaryobjective_10_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if neither of the nominated units are Destroyed, Decimated, or Shaken.</string>
+
+  <string name="secondaryobjective_11">Unleash the Big Guns</string>
+  <string name="secondaryobjective_11_description_short">Setup during Pre-game Selections: You nominate two Terrain Features on the Battlefield that are not fully within your Deployment Zone. Impassable Terrain and Walls cannot be nominated. Then mark up to two units, the most expensive Scoring units from your Army List. In case of a tie, randomize.</string>
+  <string name="secondaryobjective_11_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if you have a model with a Shooting Weapon or a marked Scoring Unit, in both nominated Terrain Features. One unit cannot be counted against both Terrain Features. Characters do not count.</string>
+
+  <string name="secondaryobjective_12">Work as One</string>
+  <string name="secondaryobjective_12_description_short">Setup during Pre-game Selections: Mark the centre of the table.</string>
+  <string name="secondaryobjective_12_description">Rules: None.
+\n\nWinning conditions: At the end of the game, you win this Secondary Objective if you have at least two Scoring Units within 9″ of the centre of table, and the opponent does not have two or more.</string>
 
   <string name="terrainlayout">Terrain Layout</string>
   <string name="terrainlayout_01">Shrouded Pool</string>

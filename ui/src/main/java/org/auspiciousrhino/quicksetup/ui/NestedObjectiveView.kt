@@ -19,7 +19,7 @@ class NestedObjectiveView(context: Context, attrs: AttributeSet) : LinearLayout(
     orientation = VERTICAL
   }
 
-  var verbose: Boolean = true
+  var verbose: Boolean = false
     set(value) {
       field = value
       mySecondaryObjectiveView.verbose = verbose
