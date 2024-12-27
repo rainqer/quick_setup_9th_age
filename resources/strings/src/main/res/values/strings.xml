@@ -28,38 +28,33 @@
   <string name="deployment_preview">Deployment Preview</string>
 
   <string name="primaryobjective">Primary Objective</string>
-  <string name="primaryobjective_01">Hold the Ground</string>
-  <string name="primaryobjective_01_description_short">Secure and hold the centre of the Battlefield.</string>
-  <string name="primaryobjective_01_description">Mark the centre of the board. At the end of each Game Turn after the first, the player with the most Scoring Units within 6″ of the centre of the board gains a counter. At the end of the game, the player with the most such counters wins this Secondary Objective.</string>
+  <string name="primaryobjective_01">Spoils of War</string>
+  <string name="primaryobjective_01_description_short">Setup during Pre-game Selections: None.</string>
+  <string name="primaryobjective_01_description">Rules: When an enemy Scoring Unit is Destroyed in Combat, the opposing player puts one Spoils Token on one of their Scoring Units (if there are any) that was just engaged with the unit Destroyed in Combat. A unit loses all its Spoils Tokens when any of the following occurs:
+\n\n\t• The last Health Point on its Rank-and-File models (see Models and Units in the Definitions and Terminology
+chapter) is lost.
+\n\n\t• It becomes Shaken. Remember that units that perform a Flee Move automatically become Shaken.
+\n\nWinning conditions: At the end of the game, the player with the most Spoils Token on their units wins this Primary Objective.</string>
   <string name="primaryobjective_02">Breakthrough</string>
-  <string name="primaryobjective_02_description_short">Invade the enemy territory.</string>
-  <string name="primaryobjective_02_description">The player with the most Scoring Units inside their opponent’s Deployment Zone at the end of the game, up to a maximum of 3, wins this Secondary Objective.</string>
-  <string name="primaryobjective_03">Spoils of War</string>
-  <string name="primaryobjective_03_description_short">Gather precious loot.</string>
-  <string name="primaryobjective_03_description">Place 3 markers along the line dividing the board into halves (the dashed line in the figures describing Deployment Types). One marker is placed with its centre on a point on this line that is as close as possible to the centre of the board while still being more than 1″ away from Impassable Terrain. The other two markers are placed with their centres on points on this line that are on either side of the central marker, as close to the centre of the board as possible but at least a third of the length of the long Board Edge (24″ on a standard board) away from it, and more than 1″ away from Impassable Terrain.
-    \n\nAt the start of each of your Player Turns, each of your Scoring units that is not carrying a marker may pick up a single marker whose centre they are in contact with. Remove the marker from the Battlefield: the unit is now carrying the marker. Units carrying a marker with fewer than 3 Full Ranks cannot perform March Moves.\n\n
-    \n\nIf a unit carrying a marker is destroyed or loses Scoring, the opponent must immediately place the marker carried by this unit with its centre on a point within 3″ of it. Ignore Post-Combat Reform for this purpose. This point cannot be within 1″ of Impassable Terrain, but it can be inside a unit.
-    \n\nAt the end of the game, the player with the most units carrying markers wins this Secondary Objective.</string>
-  <string name="primaryobjective_04">King of the Hill</string>
-  <string name="primaryobjective_04_description_short">Desecrate your opponent’s holy ground while protecting yours.</string>
-  <string name="primaryobjective_04_description">After Spell Selection (at the end of step 7 of the PreGame Sequence), both players choose a Terrain Feature that isn’t Impassable Terrain and that is not fully inside their Deployment Zone, starting with the player who chose their Deployment Zone (note that both players may choose the same Terrain Feature).
-    \n\nA player captures their opponent’s chosen Terrain Feature if any of the player’s Scoring Units are inside that Terrain Feature at the end of the game. If a player captures their opponent’s chosen Terrain Feature while not allowing their own to be captured, they win this Secondary Objective.</string>
-  <string name="primaryobjective_05">Breaking Flags</string>
-  <string name="primaryobjective_05_description_short">Invade the enemy territory and destroy valuable targets.</string>
-  <string name="primaryobjective_05_description">After Spell Selection (at the end of step 7 of the Pre-Game Sequence), mark all Scoring Units on both players’ Army Lists.
-At the end of the game, a Player is awarded Victory Counters for the following:
-● Each marked enemy unit removed as a casualty during the game.
-● Each marked enemy unit that is both Fleeing and Shattered.
-● Each marked friendly unit inside the opponent Deployment Zone.
-The player with the most Victory Counters wins this Secondary Objective.
-Rules that have special interactions with “Capture the Flags” Secondary Objective (e.g. "Bestial Bulk"
-and "Drunkard - Sober"), follows the same rules when playing this Secondary Objective.
-</string>
-  <string name="primaryobjective_06">Hold the Targets</string>
-  <string name="primaryobjective_06_description_short">Hold critical resources which must not fall into enemy hands.</string>
-  <string name="primaryobjective_06_description">Immediately after determining Deployment Zones, both players place one marker on the Battlefield, starting with the player who chose their Deployment Zone. Each player must place the marker with its centre on a point that is more than 12′′ away from their Deployment Zone and at least a third of the long Board Edge length (24′′ on a standard board) from the point marked by the other marker.
-A marker is controlled by the player with the most Scoring Units within 6′′ of the centre of the marker. If a unit is within 6′′ of the centres of both markers, it only counts as within 6′′ of the centre of the marker which is closest to its Centre (randomise if both markers’ centres are equally close).
-At the end of each Game Turn after the first, a Victory Counter is awarded to the Player which controls the most markers. At the end of the game, the player with the most such Victory Counters wins this Secondary Objective.</string>
+  <string name="primaryobjective_02_description_short">Setup during Pre-game Selections: Mark Deployment Zones.</string>
+  <string name="primaryobjective_02_description">Rules: None.
+    \n\nWinning conditions: At the end of the game, each player adds together the number of Scoring Units in their opponent’s Deployment Zone and the number of enemy units that were Scoring at the start of the game that were Destroyed in Combat. The player with the highest total wins the Primary Objective.</string>
+  <string name="primaryobjective_03">Secure Target</string>
+  <string name="primaryobjective_03_description_short">Setup during Pre-game Selections: Place two markers with their centers on the line dividing the board into halves (the dashed line in the figures describing Deployment Types), one on each side of the centre of the table, as close as possible to a third of the length of the long Board Edge (24″ on a 72″ wide board) away from it, and more than 1″ away from Impassable Terrain.</string>
+  <string name="primaryobjective_03_description">Rules: A marker is controlled if a player has at least one Scoring Unit within 6″ of the centre of the marker, and the other player does not.
+    \n\nWinning conditions: At the end of Game Turns 3–6, a Victory Counter is awarded to a Player which controls an Objective. The player with the most such Victory Counters at the end of the game wins this Primary Objective.</string>
+  <string name="primaryobjective_04">Forage and Plunder</string>
+  <string name="primaryobjective_04_description_short">Setup during Pre-game Selections: Both players nominate a Terrain Feature that is fully outside their Deployment Zone , they may nominate the same. Impassable Terrain and Walls cannot be nominated.</string>
+  <string name="primaryobjective_04_description">Rules: You automatically plunder a nominated Terrain Feature when one of your Scoring Units starts any of its Player Turn 3–6 in contact with it, each Terrain Feature can only be plundered once by each player.
+    \n\nWinning conditions: At the end of the game, if one player has plundered more nominated Terrain Features than the other player they win this Primary Objective.</string>
+  <string name="primaryobjective_05">Hold the Centre</string>
+  <string name="primaryobjective_05_description_short">Setup during Pre-game Selections: Mark the centre of the table.</string>
+  <string name="primaryobjective_05_description">Rules: The battlefield is controlled by the player with the most Scoring Units within 9″ of the centre of the table (if both players have an equal number of Scoring Units, no one controls it).
+    \n\nWinning conditions: At the end of Game Turns 3–6, a Victory Counter is awarded to a Player who controls at least one marker. The player with the most such Victory Counters at the end of the game wins this Primary Objective.</string>
+  <string name="primaryobjective_06">Hidden Agendas</string>
+  <string name="primaryobjective_06_description_short">Setup during Pre-game Selections: None.</string>
+  <string name="primaryobjective_06_description">Rules: None.
+    \n\nWinning conditions: If one player is the sole winner of their Secondary Objective, this player is rewarded +4 Battle Points and the opponent loses 4 Battle Points. This replaces the normal Battle Points bonus for winning Primary and Secondary Objectives.</string>
 
   <string name="primaryobjective_05_legacy">Breaking flags</string>
   <string name="primaryobjective_05_description_short_legacy">Valuable targets must be annihilated.</string>
