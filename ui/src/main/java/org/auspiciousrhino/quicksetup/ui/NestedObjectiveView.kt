@@ -28,7 +28,8 @@ class NestedObjectiveView(context: Context, attrs: AttributeSet) : LinearLayout(
   var viewEntity: Map<String, Objective> = emptyMap()
     set(value) {
       field = value
-      value.entries.firstOrNull()?.let { mySecondaryObjectiveView.viewEntity = it.value }
+      val selectedTabPosition = mySecondaryObjectiveForArmyTabs.selectedTabPosition.takeIf { it > 0 } ?: 0
+      mySecondaryObjectiveView.viewEntity = value[value.keys.toTypedArray()[selectedTabPosition]]
       configureTabs(value)
       mySecondaryObjectiveForArmyTabs.clearOnTabSelectedListeners()
       mySecondaryObjectiveForArmyTabs.addOnTabSelectedListener(OnObjectiveForArmySelectedTabListener(value, mySecondaryObjectiveView))
