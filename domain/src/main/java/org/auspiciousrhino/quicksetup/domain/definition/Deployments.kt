@@ -21,7 +21,7 @@ internal val DEPLOYMENT_03 = Deployment(
 )
 internal val DEPLOYMENT_04 = Deployment(
   name = Rstrings.string.deployment_04,
-  image = Rdrawable.drawable.deployment_04_mutualencroachment,
+  image = Rdrawable.drawable.deployment_04_encircle,
   description = Rstrings.string.deployment_04_description
 )
 internal val DEPLOYMENT_05 = Deployment(
@@ -31,7 +31,7 @@ internal val DEPLOYMENT_05 = Deployment(
 )
 internal val DEPLOYMENT_06 = Deployment(
   name = Rstrings.string.deployment_06,
-  image = Rdrawable.drawable.deployment_06_cornerstone,
+  image = Rdrawable.drawable.deployment_06_assultatfirstlight,
   description = Rstrings.string.deployment_06_description
 )
 
