@@ -107,12 +107,22 @@
   <string name="secondaryobjective_06_description">End of Game Completion: three or more of the marked units are NEITHER removed as a casualty, nor Decimated, nor Shaken.</string>
 
   <string name="terrainlayout">Terrain Layout</string>
-  <string name="terrainlayout_01">Clearwater Springs</string>
-  <string name="terrainlayout_02">Ancient Fortifications</string>
-  <string name="terrainlayout_03">Ancient Fortifications</string>
-  <string name="terrainlayout_04">Abandoned Settlement</string>
-  <string name="terrainlayout_05">Historic Battlefield</string>
-  <string name="terrainlayout_06">Mountainous Crags</string>
+  <string name="terrainlayout_01">Battlefields of Vetia #1</string>
+  <string name="terrainlayout_02">Battlefields of Vetia #2</string>
+  <string name="terrainlayout_03">Battlefields of Vetia #3</string>
+  <string name="terrainlayout_04">Battlefields of Vetia #4</string>
+  <string name="terrainlayout_05">Battlefields of Vetia #5</string>
+  <string name="terrainlayout_06">Battlefields of Vetia #6</string>
+  <string name="terrainlayout_07">Battlefields of Vetia #7</string>
+  <string name="terrainlayout_08">Battlefields of Vetia #8</string>
+  <string name="terrainlayout_09">Battlefields of Taphria #1</string>
+  <string name="terrainlayout_10">Battlefields of Taphria #2</string>
+  <string name="terrainlayout_11">Battlefields of Taphria #3</string>
+  <string name="terrainlayout_12">Battlefields of Taphria #4</string>
+  <string name="terrainlayout_13">Battlefields of Taphria #5</string>
+  <string name="terrainlayout_14">Battlefields of Taphria #6</string>
+  <string name="terrainlayout_15">Battlefields of Taphria #7</string>
+  <string name="terrainlayout_16">Battlefields of Taphria #8</string>
   <string name="terrainlayout_preview">Terrain Layout Preview</string>
 
   <string name="listimport_import_from_clipboard">Load list from clipboard</string>
