@@ -28,31 +28,48 @@
   <string name="deployment_preview">Deployment Preview</string>
 
   <string name="primaryobjective">Primary Objective</string>
-  <string name="primaryobjective_01">Spoils of War</string>
+  <string name="primaryobjective_01">Trophies of War</string>
   <string name="primaryobjective_01_description_short">Setup during Pre-game Selections: None.</string>
-  <string name="primaryobjective_01_description">Rules: when an enemy Scoring Unit is Destroyed in Combat, the opposing player puts one Spoils Token on one of their Scoring Units (if there are any), that was just Engaged with the unit Destroyed in Combat. A unit loses all its Spoils Tokens if all its Rank-and-File models are removed as a casualty, or it becomes Shaken.
-\n\nWinning conditions: at the end of the game, the player with the most Spoils Tokens on their units wins this Primary Objective.</string>
-  <string name="primaryobjective_02">Breakthrough</string>
-  <string name="primaryobjective_02_description_short">Setup during Pre-game Selections: Mark Deployment Zones.</string>
-  <string name="primaryobjective_02_description">Rules: None.
-    \n\nWinning conditions: At the end of the game, each player adds together the number of Scoring Units in their opponent’s Deployment Zone and the number of enemy units that were Scoring at the start of the game that were Destroyed in Combat. The player with the highest total wins the Primary Objective.</string>
-  <string name="primaryobjective_03">Secure Target</string>
-  <string name="primaryobjective_03_description_short">Setup during Pre-game Selections: place two markers with their centres on the Central Line, one on each side of the centre of the Battlefield, as close as possible to a sixth of the length of the long Table Edge away from the Short Table Edges, and more than 1′′ away from Impassable Terrain. Note: on a standard 72′′ Battlefield, the markers are 12′′ away from the Short Table Edges and 48′′ away from each other.</string>
-  <string name="primaryobjective_03_description">Rules: a marker is “controlled” if a player has at least one Scoring Unit within 6′′ of the centre of the marker, and the other player does not.
-    \n\nWinning conditions: at the end of Game Turns 3 to 6, an Objective Counter is awarded to a player who controls at least one marker. The player with the most Objective Counters at the end of the game wins this Primary Objective.</string>
-  <string name="primaryobjective_04">Forage and Plunder</string>
-  <string name="primaryobjective_04_description_short">Setup during Pre-game Selections: mark a total of three different Terrain Features that are not Walls or Impassible Terrain: first, mark the Terrain Feature closest to the centre of the Battlefield. Then, each player marks one Terrain Feature that is fully outside of their Deployment Zone.</string>
-  <string name="primaryobjective_04_description">Rules: you automatically “plunder” a marked Terrain Feature, that you have not already plundered, when a friendly Scoring Units starts any of its Player Turns 3 to 6 in contact with it. Both players can plunder all marked Terrain Features once, even if the other player has already done so.
-    \n\nWinning conditions: at the end of the game, a player who has plundered more marked Terrain Features than the other player wins the Primary Objective.</string>
+  <string name="primaryobjective_01_description"> Rules: whenever an Enemy unit Engaged in Combat,including all Attached Models, is removed as a casualty, put a single Trophy Token on a single Friendly Scoring unit that was just Engaged with the removed unit. A unit immediately loses all its Trophy Tokens if it loses Scoring.
+    \n\nEnd of Game Completion: the player with the most Trophy Tokens on their units wins.
+    \n\nIf both players have no Tokens and one player also has no Scoring units, remaining on the Battlefield, the other player wins.</string>
+  <string name="primaryobjective_02">Divide and Conquer</string>
+  <string name="primaryobjective_02_description_short">Setup during Pre-game Selections: mark the Battlefield Centre and divide the Battlefield into quarters.</string>
+  <string name="primaryobjective_02_description">Rules: END of Game Turns 3 to 6, a player gains a single Objective Counter if they have more quarters touching Friendly Scoring units than the opponent has. Each unit can only touch a single quarter at a time, determined by the location of its Centre.
+  \nA unit with its Centre within 9″ of the Battlefield Centre does not count as being in Contact with any quarter.
+  \n\nEnd of Game Completion: the player with the most Objective Counters wins.
+  </string>  <string name="primaryobjective_03">Breakthrough</string>
+  <string name="primaryobjective_03_description_short">Setup during Pre-game Selections: mark all Scoring units on the opponent’s Army List</string>
+  <string name="primaryobjective_03_description">
+    Rules: none.
+    \n\nEnd of Game Completion: combine the number of:
+    \n1. marked Enemy units that were removed as a casualty whilst Engaged in Combat and
+    \n2. Friendly Scoring units in Contact with the Enemy’s Deployment Zone.
+  </string>
+  <string name="primaryobjective_04">Secure Target</string>
+  <string name="primaryobjective_04_description_short">Setup during Pre-game Selections: place two markers on opposite sides of the Battlefield, with their centres on the Central Line and 18″* from the Battlefield Centre.</string>
+  <string name="primaryobjective_04_description">
+    Rules: END of Game Turns 3 to 6, a player gains a single Objective Counter if they control more markers than their opponent. A marker is controlled if there are any Friendly Scoring units and no Enemy Scoring units within 6″ of a marker.
+    \n\nEnd of Game Completion: the player with the most Objective Counters wins.
+    \n\n* For Battlefields of a larger or smaller size than the standard 72″×48″, replace 18″ with a distance equal to a quarter of the Long Battlefield Edge.
+    </string>
   <string name="primaryobjective_05">Hold the Centre</string>
-  <string name="primaryobjective_05_description_short">Setup during Pre-game Selections: mark the centre of the Battlefield.</string>
-  <string name="primaryobjective_05_description">Rules: the Battlefield is “controlled” by the player who has the most Scoring Units within 9′′ of the centre of the Battlefield (if both players have an equal number of Scoring Units, no one controls it).
-    \n\nWinning conditions: at the end of Game Turns 3 to 6, an Objective Counter is awarded to a player who controls the Battlefield. The player with the most Objective Counters at the end of the game wins this Primary Objective.</string>
-  <string name="primaryobjective_06">Hidden Agendas</string>
-  <string name="primaryobjective_06_description_short">Setup during Pre-game Selections: None.</string>
-  <string name="primaryobjective_06_description">Rules: each player randomly picks one additional Secondary Objective, following the rules for Random Selection of Secondary Objectives.
-    \n\nWinning conditions: for each completed Secondary Objective, a player scores 2 Battle Points, and the opponent loses 2 Battle Points. This replaces the normal scoring and losing of Battle Points for both Primary and Secondary Objectives.</string>
-
+  <string name="primaryobjective_05_description_short">Setup during Pre-game Selections: mark the Battlefield Centre.</string>
+  <string name="primaryobjective_05_description">
+    Rules: END of Game Turns 3 to 6, the player with the most Scoring units within 9″ of the Battlefield Centre gains a single Objective Counter.
+    \n\nEnd of Game Completion: the player with the most Objective Counters wins.
+  </string>
+  <string name="primaryobjective_06">Skull of Harald Redstub</string>
+  <string name="primaryobjective_06_description_short">Setup during Pre-game Selections: place a marker on the Battlefield Centre and two markers on opposite sides of the Battlefield, with their centres on the Central Line and 18″* from the Battlefield Centre. Then place a single Clue Token on each Terrain Feature except Impassable Terrain and playermade Terrain Features.</string>
+  <string name="primaryobjective_06_description">
+  Rules: START of each Friendly Player Turn, pick up a Clue Token from each Terrain Feature where:
+  \n• there is a Clue Token,
+  \n• a Friendly Scoring unit is in Contact, and
+  \n• no Enemy Scoring units are in Contact.
+  \n\nEND of Game Turn 3, the player with the most Clue Token selects which marker holds the Skull. In case of a tie, the marker at the Battlefield Centre is selected.
+  \n\nEnd of Game Completion: the player with the most Scoring units within 6″ of the Skull wins.
+  \n\n* For Battlefields of a larger or smaller size the standard 72″x 48″, replace 18″ with a distance equal to a quarter of the Long Battlefield Edge.
+  </string>
   <string name="primaryobjective_05_legacy">Breaking flags</string>
   <string name="primaryobjective_05_description_short_legacy">Valuable targets must be annihilated.</string>
   <string name="primaryobjective_05_description_legacy">After Spell Selection (at the end of step 7 of the PreGame Sequence), mark all Scoring Units on both players’ Army Lists. If either player has fewer than 3 marked units, their opponent must mark enough units from this player’s Army List so that there are exactly 3 marked units in the army, starting with the player who chose their Deployment Zone.
