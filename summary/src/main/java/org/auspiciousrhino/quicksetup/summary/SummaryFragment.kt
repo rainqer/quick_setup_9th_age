@@ -23,7 +23,7 @@ class SummaryFragment : Fragment() {
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
-    savedInstanceState: Bundle?
+    savedInstanceState: Bundle?,
   ): View {
     _binding = ActivitySummaryBinding.inflate(layoutInflater)
     return binding.root
@@ -51,8 +51,9 @@ class SummaryFragment : Fragment() {
       binding.terrainLayout.viewEntity = summaryState.configuration.map
       binding.deployment.viewEntity = summaryState.configuration.deployment
       binding.primaryObjective.viewEntity = summaryState.configuration.primaryObjective
-      binding.mySecondaryObjective.viewEntity = summaryState.configuration.mySecondaryObjectives
-      binding.opponentSecondaryObjective.viewEntity = summaryState.configuration.opponentSecondaryObjectives
+      binding.secondaryObjective1.viewEntity = summaryState.configuration.secondaryObjectives[0]
+      binding.secondaryObjective2.viewEntity = summaryState.configuration.secondaryObjectives[1]
+      binding.secondaryObjective3.viewEntity = summaryState.configuration.secondaryObjectives[2]
     }
     model.navigationEvents.observe(viewLifecycleOwner) { navigationEvent ->
       navigation.consume(navigationEvent, view)
@@ -77,15 +78,14 @@ class SummaryFragment : Fragment() {
     binding.generateNewConfigurationButton.setOnClickListener {
       model.generateNewConfiguration()
     }
-    binding.mySecondaryObjective.verbose = true
-    binding.opponentSecondaryObjective.verbose = true
   }
 
   private fun enableAnimations() {
     binding.summaryRoot.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
     binding.deploymentCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
     binding.primaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
-    binding.mySecondaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
-    binding.opponentSecondaryObjectiveCard.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.secondaryObjectiveCard1.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.secondaryObjectiveCard2.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
+    binding.secondaryObjectiveCard3.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
   }
 }

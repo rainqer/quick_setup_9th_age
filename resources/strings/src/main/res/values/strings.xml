@@ -70,77 +70,41 @@
   \n\nEnd of Game Completion: the player with the most Scoring units within 6″ of the Skull wins.
   \n\n* For Battlefields of a larger or smaller size the standard 72″x 48″, replace 18″ with a distance equal to a quarter of the Long Battlefield Edge.
   </string>
-  <string name="primaryobjective_05_legacy">Breaking flags</string>
-  <string name="primaryobjective_05_description_short_legacy">Valuable targets must be annihilated.</string>
-  <string name="primaryobjective_05_description_legacy">After Spell Selection (at the end of step 7 of the PreGame Sequence), mark all Scoring Units on both players’ Army Lists. If either player has fewer than 3 marked units, their opponent must mark enough units from this player’s Army List so that there are exactly 3 marked units in the army, starting with the player who chose their Deployment Zone.
-    \n\nThe player who has the lowest number of their marked units removed as casualties at the end of the game wins this Secondary Objective.</string>
-  <string name="primaryobjective_06_legacy">Secure Target</string>
-  <string name="primaryobjective_06_description_short_legacy">Critical resources must not fall into enemy hands.</string>
-  <string name="primaryobjective_06_description_legacy">Immediately after determining Deployment Zones, both players place one marker on the Battlefield, starting with the player who chose their Deployment Zone. Each player must place the marker with its centre on a point that is more than 12″ away from their Deployment Zone and at least a third of the long Board Edge length (24″ on a standard board) from the point marked by the other marker.
-    \n\nAt the end of the game, the player controlling the most markers wins this Secondary Objective. A marker is controlled by the player with the most Scoring Units within 6″ of the centre of the marker. If a unit is within 6″ of the centres of both markers, it only counts as within 6″ of the centre of the marker which is closest to its Centre (randomise if both markers’ centres are equally close).</string>
+  <string name="secondaryobjectives_section_title">Secondary Objectives</string>
+  <string name="secondaryobjectives_comment">
+    If an Army List does not contain enough units that fulfil the requirements of a Secondary Objective, the relevant player first selects all units that fulfil the criteria and can then choose any units for the remaining choices.
+    \n\nDuring Pre-game Selections, Defender picks one of the following objectives, the Attacker then immediately picks one of the remaining two.
+  </string>
 
-  <string name="mysecondaryobjective">My Secondary Objective</string>
-  <string name="opponentsecondaryobjective">Opponents Secondary Objective</string>
+  <string name="secondaryobjectives_1">Secondary objective #1</string>
+  <string name="secondaryobjectives_2">Secondary objective #2</string>
+  <string name="secondaryobjectives_3">Secondary objective #3</string>
 
-  <string name="secondaryobjective_01">Capture the Flag</string>
-  <string name="secondaryobjective_01_description_short">Setup during Pre-game Selections: None.</string>
-  <string name="secondaryobjective_01_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, you have more Standard Bearers and Battle Standard Bearers on the Battlefield than the opponent has.</string>
+  <string name="secondaryobjective_01">Settle the Score</string>
+  <string name="secondaryobjective_01_description_short">Pre-game Selections: on the opponent’s Army List mark TWO Rank-and-File units.</string>
+  <string name="secondaryobjective_01_description">End of Game Completion: BOTH marked units are removed as a casualty, Decimated, or Shaken.</string>
 
-  <string name="secondaryobjective_02">Commit to Battle</string>
-  <string name="secondaryobjective_02_description_short">Setup during Pre-game Selections: None.</string>
-  <string name="secondaryobjective_02_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, you have more Scoring Units in your opponent’s Deployment Zone than the opponent has (in their own Deployment Zone).</string>
+  <string name="secondaryobjective_02">Demonstrate Superiority</string>
+  <string name="secondaryobjective_02_description_short">Pre-game Selections: on the opponent’s Army List mark TWO Scoring units.</string>
+  <string name="secondaryobjective_02_description">End of Game Completion: at least one of the marked units is removed as a casualty, Decimated, or Shaken.</string>
 
-  <string name="secondaryobjective_03">Demonstrate Superiority</string>
-  <string name="secondaryobjective_03_description_short">Setup during Pre-game Selections: the opponent marks the two most expensive Scoring Units on their Army List. If there is only one Scoring Unit, also mark the most expensive Rank-and-File Unit. If there are no Scoring Units, mark the two most expensive Rank-and-File Units instead. In any case of tie, randomize.</string>
-  <string name="secondaryobjective_03_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, at least one of the marked units is removed as a casualty, Decimated, Shaken, or in contact with its own Deployment Zone.</string>
+  <string name="secondaryobjective_03">Slay the Beast</string>
+  <string name="secondaryobjective_03_description_short">Setup during Pre-game Selections: on the opponent’s Army List mark the TWO most expensive</string>
+  <string name="secondaryobjective_03_description">Non-Scoring Rank-and-File units or Characters of Height 4&#8211;5 with Solitary. End of Game Completion: at least one of the marked units is removed as a casualty, Decimated, or Shaken</string>
 
-  <string name="secondaryobjective_04">Enslave and Ransom</string>
-  <string name="secondaryobjective_04_description_short">Setup during Pre-game Selections: None.</string>
-  <string name="secondaryobjective_04_description">Rules: you gain a “Prisoners” Counter every time an enemy unit is Destroyed in Combat. If the unit is removed as a casualty in step 5 of the Round of Combat Sequence (“Breaking and Pursuing”), you gain an additional Prisoners Counter. This includes failing a Break Test and being caught by a Pursuing unit, but also units being removed as casualties due to initiating a Flee Move while Decimated, Supernal units failing a Break Test, or Unstable units losing a Combat and being wiped due to the resulting HP losses, but does not include units being removed as casualties as a direct result of Melee Attacks. For this purpose, ignore Attachable Models joined to Rank-and-File Units.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, you have at least four Prisoners Counters.</string>
+  <string name="secondaryobjective_04">Assassinate</string>
+  <string name="secondaryobjective_04_description_short">Setup during Pre-game Selections: on the opponent’s Army List mark TWO Characters. These must be: Characters who can be Deployed during Battle Setup. (Note: you cannot mark Hidden Characters.)</string>
+  <string name="secondaryobjective_04_description">End of Game Completion: at least one of the marked units is removed as a casualty, Decimated, or Shaken.</string>
 
-  <string name="secondaryobjective_05">Forbid Trespass</string>
-  <string name="secondaryobjective_05_description_short">Setup during Pre-game Selections: mark a Terrain Feature on the Battlefield that is fully outside your Deployment Zone, and that is not a Wall nor Impassable Terrain.</string>
-  <string name="secondaryobjective_05_description">Rules: the marked Terrain Feature is “plundered” when an enemy Scoring Unit starts any of its Player Turn 3 to 6 in contact with it.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, the marked Terrain Feature was not plundered.</string>
+  <string name="secondaryobjective_05">Capture their Banners</string>
+  <string name="secondaryobjective_05_description_short">Setup during Pre-game Selections: on the opponent’s Army List mark ALL Scoring units and The Battle Standard Bearer.
+    \n\nAt least 3 units must be marked.</string>
+  <string name="secondaryobjective_05_description">End of Game Completion: Three or more of the marked units are removed as a casualty, Decimated, or Shaken.</string>
 
-  <string name="secondaryobjective_06">Master the Veil</string>
-  <string name="secondaryobjective_06_description_short">Setup during Pre-game Selections: Mark the centre of the Battlefield.</string>
-  <string name="secondaryobjective_06_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, you have a Caster or a model with Channel, within 9′′ of the centre of Battlefield, and the opponent does not.</string>
-
-  <string name="secondaryobjective_07">Seize and Secure</string>
-  <string name="secondaryobjective_07_description_short">Setup during Pre-game Selections: the opponent marks a Terrain Feature on the Battlefield that is fully outside their Deployment Zone, and that is not a Wall nor Impassable Terrain.</string>
-  <string name="secondaryobjective_07_description">Rules: the marked Terrain Feature is “plundered” if a friendly Scoring Unit starts any of its Player Turn 3 to 6 in contact with it.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, the marked Terrain Feature was plundered.</string>
-
-  <string name="secondaryobjective_08">Settle the Score</string>
-  <string name="secondaryobjective_08_description_short">Setup during Pre-game Selections: you mark a unit from the opponent’s Army List.</string>
-  <string name="secondaryobjective_08_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, the marked unit is removed as a casualty, Decimated, or Shaken.</string>
-
-  <string name="secondaryobjective_09">Slay the Beast</string>
-  <string name="secondaryobjective_09_description_short">Setup during Pre-game Selections: the opponent marks the two most expensive non-Scoring Units from their Army List. If there is only one non-Scoring Unit, also mark the most expensive Scoring Unit. If there are no non-Scoring units, mark the two most expensive Scoring Units instead. In any case of tie, randomize.</string>
-  <string name="secondaryobjective_09_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, at least one of the marked units is removed as a casualty, Decimated, Shaken, or in contact with its own Deployment Zone.</string>
-
-  <string name="secondaryobjective_10">Stand Firm</string>
-  <string name="secondaryobjective_10_description_short">Setup during Pre-game Selections: the opponent marks two Rank-and-File units from your Army List. If possible, each of these must be a Scoring Unit.</string>
-  <string name="secondaryobjective_10_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, neither of the marked units are removed as a casualty, Decimated, or Shaken.</string>
-
-  <string name="secondaryobjective_11">Unleash the Big Guns</string>
-  <string name="secondaryobjective_11_description_short">Setup during Pre-game Selections: you mark two Terrain Features on the Battlefield that are not fully within your Deployment Zone, and that are not Walls nor Impassable Terrain. Then mark all non-Characters units from your Army List that have Shooting Weapons, and one Scoring Unit without Shooting Weapons. If less than five units have been marked, you may mark one additional Scoring Unit.</string>
-  <string name="secondaryobjective_11_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, you have a non-Shaken marked unit in both nominated Terrain Features.</string>
-
-  <string name="secondaryobjective_12">Work as One</string>
-  <string name="secondaryobjective_12_description_short">Setup during Pre-game Selections: Mark the centre of the Battlefield.</string>
-  <string name="secondaryobjective_12_description">Rules: None.
-\n\nWinning conditions: you complete this Secondary Objective if, at the end of the game, you have more Scoring Units within 9′′ of the centre of Battlefield than the opponent has.</string>
+  <string name="secondaryobjective_06">Conserve our Numbers</string>
+  <string name="secondaryobjective_06_description_short">Setup during Pre-game Selections: on YOUR Army List the opponent marks ALL Scoring units and The Battle Standard Bearer.
+    \n\nAt least 3 units must be marked.</string>
+  <string name="secondaryobjective_06_description">End of Game Completion: three or more of the marked units are NEITHER removed as a casualty, nor Decimated, nor Shaken.</string>
 
   <string name="terrainlayout">Terrain Layout</string>
   <string name="terrainlayout_01">Clearwater Springs</string>

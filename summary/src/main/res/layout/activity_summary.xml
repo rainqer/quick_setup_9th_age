@@ -12,7 +12,6 @@
     android:animateLayoutChanges="true"
     android:orientation="vertical">
 
-
     <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -22,20 +21,20 @@
 
       <Button
         android:id="@+id/generateNewConfigurationButton"
+        style="@style/Typography.Component.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical_medium"
-        android:text="@string/generateNewConfiguration"
-        style="@style/Typography.Component.Button"/>
+        android:text="@string/generateNewConfiguration" />
 
     </LinearLayout>
 
     <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
       android:background="@color/white"
       android:orientation="vertical"
-      android:layout_marginTop="@dimen/margin_vertical_medium"
       android:padding="@dimen/screen_padding">
 
       <TextView
@@ -51,11 +50,11 @@
 
       <Button
         android:id="@+id/enlargeTerrain"
+        style="@style/Typography.Component.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical_medium"
-        android:text="@string/enlarge"
-        style="@style/Typography.Component.Button"/>
+        android:text="@string/enlarge" />
 
     </LinearLayout>
 
@@ -64,9 +63,9 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:animateLayoutChanges="true"
       android:background="@color/white"
       android:orientation="vertical"
-      android:animateLayoutChanges="true"
       android:padding="@dimen/screen_padding">
 
       <TextView
@@ -84,11 +83,11 @@
 
       <Button
         android:id="@+id/deploymentDetailsButton"
+        style="@style/Typography.Component.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical_medium"
-        android:text="@string/details"
-        style="@style/Typography.Component.Button"/>
+        android:text="@string/details" />
 
     </LinearLayout>
 
@@ -97,9 +96,9 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:animateLayoutChanges="true"
       android:background="@color/white"
       android:orientation="vertical"
-      android:animateLayoutChanges="true"
       android:padding="@dimen/screen_padding">
 
       <TextView
@@ -117,76 +116,104 @@
 
       <Button
         android:id="@+id/primaryObjectiveDetailsButton"
+        style="@style/Typography.Component.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical_medium"
-        android:text="@string/details"
-        style="@style/Typography.Component.Button"/>
+        android:text="@string/details" />
 
     </LinearLayout>
 
     <LinearLayout
-      android:id="@+id/mySecondaryObjectiveCard"
+      android:id="@+id/secondaryObjectiveTitleCard"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:animateLayoutChanges="true"
       android:background="@color/white"
       android:orientation="vertical"
-      android:animateLayoutChanges="true"
       android:padding="@dimen/screen_padding">
 
       <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/mysecondaryobjective"
-        android:textAppearance="@style/Typography.Component.Subtitle" />
+        android:text="@string/secondaryobjectives_section_title"
+        android:textAppearance="@style/Typography.Component.Title" />
 
-      <org.auspiciousrhino.quicksetup.ui.NestedObjectiveView
-        android:id="@+id/mySecondaryObjective"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-      <Button
-        android:id="@+id/mySecondaryObjectiveDetailsButton"
+      <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_vertical_medium"
-        android:text="@string/details"
-        android:visibility="gone"
-        style="@style/Typography.Component.Button"/>
+        android:text="@string/secondaryobjectives_comment"
+        android:textAppearance="@style/Typography.Component.Subtitle" />
 
     </LinearLayout>
 
     <LinearLayout
-      android:id="@+id/opponentSecondaryObjectiveCard"
+      android:id="@+id/secondaryObjectiveCard1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:animateLayoutChanges="true"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:padding="@dimen/screen_padding">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/secondaryobjectives_1"
+        android:textAppearance="@style/Typography.Component.Paragraph" />
+
+      <org.auspiciousrhino.quicksetup.ui.ObjectiveView
+        android:id="@+id/secondaryObjective1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/secondaryObjectiveCard2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_vertical_medium"
+      android:animateLayoutChanges="true"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:padding="@dimen/screen_padding">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/secondaryobjectives_2"
+        android:textAppearance="@style/Typography.Component.Paragraph" />
+
+      <org.auspiciousrhino.quicksetup.ui.ObjectiveView
+        android:id="@+id/secondaryObjective2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/secondaryObjectiveCard3"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="@dimen/margin_vertical_medium"
       android:layout_marginBottom="@dimen/margin_vertical_xxl"
+      android:animateLayoutChanges="true"
       android:background="@color/white"
       android:orientation="vertical"
-      android:animateLayoutChanges="true"
       android:padding="@dimen/screen_padding">
-
       <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/opponentsecondaryobjective"
-        android:textAppearance="@style/Typography.Component.Subtitle" />
+        android:text="@string/secondaryobjectives_3"
+        android:textAppearance="@style/Typography.Component.Paragraph" />
 
-      <org.auspiciousrhino.quicksetup.ui.NestedObjectiveView
-        android:id="@+id/opponentSecondaryObjective"
+      <org.auspiciousrhino.quicksetup.ui.ObjectiveView
+        android:id="@+id/secondaryObjective3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-      <Button
-        android:id="@+id/opponentSecondaryObjectiveDetailsButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_vertical_medium"
-        android:text="@string/details"
-        android:visibility="gone"
-        style="@style/Typography.Component.Button"/>
 
     </LinearLayout>
 
