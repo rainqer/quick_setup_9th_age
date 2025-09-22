@@ -17,6 +17,7 @@ dependencies {
   implementation(project(Modules.ui))
 
   implementation(libs.material)
+  implementation(libs.androidx.coreKtx)
   implementation(libs.android.navigation.fragment)
   implementation(libs.android.navigation.ui)
 }

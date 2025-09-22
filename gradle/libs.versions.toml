@@ -1,9 +1,9 @@
 [versions]
 navigation = "2.8.5"
 kotlin-gradle-plugin = "1.6.0"
-gradle = "8.5.0"
+gradle = "8.12.3"
 gradle-plugin = "1.6.0"
-kotlin = "1.9.24"
+kotlin = "2.0.0"
 material = "1.6.0"
 koin = "3.1.4"
 gson = "2.8.6"
@@ -11,7 +11,8 @@ photoView = "1.2.4"
 junit = "4.13"
 lifecycleKtxViewModel = "2.4.0"
 lifecycleKtxLiveData = "2.4.0"
-ktxActivities = "1.4.0"
+ktxActivities = "1.11.0"
+ktxCore = "1.17.0"
 constraintlayout = "2.1.2"
 recyclerview = "1.2.1"
 viewpager2 = "1.1.0"
@@ -37,6 +38,7 @@ test-junit = { group = "junit", name = "junit", version.ref = "junit" }
 lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleKtxViewModel" }
 lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleKtxLiveData" }
 androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "ktxActivities" }
+androidx-coreKtx = { module = "androidx.core:core-ktx", version.ref = "ktxCore" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 
